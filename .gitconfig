@@ -4,7 +4,7 @@
 	name = karthic
 	email = karthic891@gmail.com
 [core]
-	editor = vim
+	editor = emacs
 [alias]
 	st = status
 	cm = commit

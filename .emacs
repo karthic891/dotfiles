@@ -89,6 +89,16 @@
 (setq ac-auto-start 1) ;;start auto-completion after 2 characters of a word
 (setq ac-ignore-case) ;;for case sensitivity - set nil for reverse case
 
+;;Python IDE setup
+;;(setenv "PYMACS_PYTHON" "python2.7")
+(add-to-list 'load-path "~/.emacs.d/plugins/pymacs")
+(require 'pymacs)
+(pymacs-load "ropemacs" "rope-")
+(setq ropemacs-enable-autoimport t)
+
+;;pyflakes setting
+(setq python-check-command "pyflakes")
+
 ;;default tab-width
 (setq tab-width 4)
 
