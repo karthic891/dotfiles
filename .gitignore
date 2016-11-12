@@ -9,3 +9,4 @@
 .emacs.d/**~
 .emacs.d/session*
 !xecute/
+!xecute/xecute.sh
