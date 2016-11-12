@@ -1,0 +1,22 @@
+;; Object activitystream/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "activitystream/"
+  :tables
+  (list
+    (semanticdb-table "SingleEntity.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("spire.commons.activitystream" package nil nil [13 50])
+            ("SingleEntity" type
+               (:typemodifiers ("public")
+                :superclasses "BaseEntity"
+                :type "class")
+                nil [90 139]))          
+      :file "SingleEntity.java"
+      :pointmax 140
+      :fsize 139
+      :lastmodtime '(22320 30559 420964 633000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!activity-stream-service!activity-stream!src!main!java!spire!commons!activitystream!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

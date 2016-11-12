@@ -1,0 +1,47 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables (list 
+   (semanticdb-table "ActivityStream.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.activitystream.core" package nil nil [1 43])
+            ("java.util.List" include nil nil [45 67])
+            ("spire.commons.activitystream.Action" include nil nil [69 112])
+            ("spire.commons.activitystream.Activity" include nil nil [113 158])
+            ("spire.commons.activitystream.ActivityType" include nil nil [159 208])
+            ("spire.commons.activitystream.CollectionEntity" include nil nil [209 262])
+            ("spire.commons.activitystream.Filter" include nil nil [263 306])
+            ("spire.commons.activitystream.ObjectType" include nil nil [307 354])
+            ("spire.commons.activitystream.PageInfo" include nil nil [355 400])
+            ("spire.commons.activitystream.TypeFilter" include nil nil [401 448])
+            ("spire.commons.activitystream.exceptions.InvalidParameterException" include nil nil [449 522])
+            ("spire.commons.activitystream.exceptions.SystemException" include nil nil [523 586])
+            ("ActivityStream" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("createActivity" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("activity" variable (:type "Activity") (reparse-symbol formal_parameters) [1046 1063]))                          
+                        :type "Activity")
+                        (reparse-symbol interface_member_declaration) [1015 1065])
+                    ("getActivity" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("activityId" variable (:type "String") (reparse-symbol formal_parameters) [1220 1237]))                          
+                        :type "Activity")
+                        (reparse-symbol interface_member_declaration) [1192 1239]))                  
+                :type "interface")
+                nil [884 4594]))          
+    :file "ActivityStream.java"
+    :pointmax 4595
+    :fsize 4594
+    :lastmodtime '(22015 58234 20562 931000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!vkarthic!spirework!java!activity-stream-service!activity-stream!src!main!java!spire!commons!activitystream!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

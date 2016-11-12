@@ -1,0 +1,16 @@
+;; Object input/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "input/"
+  :tables
+  (list
+    (semanticdb-table "zachary-contreras-706a576.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "zachary-contreras-706a576.json"
+      :pointmax 6187
+      :fsize 6186
+      :lastmodtime '(22341 53154 154236 294000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!useless!ayyo!input!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

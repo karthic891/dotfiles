@@ -1,0 +1,75 @@
+;; Object scrap/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scrap/"
+  :tables (list 
+   (semanticdb-table "LinkedInProfileParser.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.crm.scrap" package nil nil [1 25])
+            ("java.io.IOException" include nil nil [27 54])
+            ("java.time.Month" include nil nil [55 78])
+            ("java.util.ArrayList" include nil nil [79 106])
+            ("java.util.Calendar" include nil nil [107 133])
+            ("java.util.HashSet" include nil nil [134 159])
+            ("java.util.List" include nil nil [160 182])
+            ("java.util.Set" include nil nil [183 204])
+            ("java.util.regex.Matcher" include nil nil [205 236])
+            ("java.util.regex.Pattern" include nil nil [237 268])
+            ("org.apache.uima.UIMAException" include nil nil [270 307])
+            ("org.jsoup.Jsoup" include nil nil [308 331])
+            ("org.jsoup.nodes.Document" include nil nil [332 364])
+            ("org.jsoup.nodes.Element" include nil nil [365 396])
+            ("org.jsoup.select.Elements" include nil nil [397 430])
+            ("spire.commons.logger.Key" include nil nil [432 464])
+            ("spire.commons.logger.Logger" include nil nil [465 500])
+            ("spire.commons.logger.LoggerFactory" include nil nil [501 543])
+            ("spire.crm.profiles.bean.Profile" include nil nil [544 583])
+            ("spire.crm.scrap.entity.Education" include nil nil [584 624])
+            ("spire.crm.scrap.entity.Experience" include nil nil [625 666])
+            ("spire.crm.scrap.entity.LinkedInProfile" include nil nil [667 713])
+            ("spire.social.entity.Social" include nil nil [752 786])
+            ("spire.talent.common.beans.CollectionEntity" include nil nil [787 837])
+            ("spire.talent.entity.profileservice.beans.CandidateBean" include nil nil [838 900])
+            ("spire.talent.entity.profileservice.beans.CandidateEducationMapBean" include nil nil [901 975])
+            ("spire.talent.entity.profileservice.beans.CandidateEmployerMapBean" include nil nil [976 1049])
+            ("spire.talent.entity.profileservice.beans.CandidateSkillMapBean" include nil nil [1050 1120])
+            ("org.jcp.xml.dsig.internal.dom.Utils" include nil nil [1121 1164])
+            ("LinkedInProfileParser" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1235 1326])
+                    ("parse" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [1372 1382])
+                            ("html" variable (:type "String") (reparse-symbol formal_parameters) [1384 1395]))                          
+                        :type "LinkedInProfile")
+                        (reparse-symbol class_member_declaration) [1336 12110])
+                    ("createGenericProfile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("linkedInProfile" variable (:type "LinkedInProfile") (reparse-symbol formal_parameters) [12163 12194]))                          
+                        :type "Profile")
+                        (reparse-symbol class_member_declaration) [12120 21890])
+                    ("parseExperience" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("experienceInStr" variable (:type "String") (reparse-symbol formal_parameters) [21937 21959]))                          
+                        :type "short")
+                        (reparse-symbol class_member_declaration) [21900 23360]))                  
+                :type "class")
+                nil [1195 23367]))          
+    :file "LinkedInProfileParser.java"
+    :pointmax 23368
+    :fsize 23932
+    :lastmodtime '(22221 26397 370907 520000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!karthic!spirework!java!useless!web-scrapper!src!main!java!spire!crm!scrap!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

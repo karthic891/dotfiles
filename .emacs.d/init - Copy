@@ -1,0 +1,10 @@
+;;karthic's emacs file
+
+;;remove the emacs image during statup
+(setq inhibit-startup-message t)
+
+;;set default mail-id
+(setq user-mail-address "karthic891@gmail.com")
+
+;;load shell prompt
+(eshell)

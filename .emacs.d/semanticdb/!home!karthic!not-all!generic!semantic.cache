@@ -1,0 +1,18 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables (list 
+   (semanticdb-table "2softsolutions.json"
+    :major-mode 'js-mode
+    :tags nil
+    :file "2softsolutions.json"
+    :pointmax 15080
+    :fsize 15079
+    :lastmodtime '(22210 59337 999500 408000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!karthic!not-all!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

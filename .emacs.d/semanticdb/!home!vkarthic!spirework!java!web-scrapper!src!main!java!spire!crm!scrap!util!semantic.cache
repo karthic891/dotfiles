@@ -1,0 +1,166 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "RestApiScrapUtil.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.crm.scrap.util" package nil nil [1 30])
+            ("java.io.IOException" include nil nil [32 59])
+            ("java.io.StringWriter" include nil nil [60 88])
+            ("java.io.Writer" include nil nil [89 111])
+            ("java.net.Authenticator" include nil nil [112 142])
+            ("java.net.HttpURLConnection" include nil nil [143 177])
+            ("java.net.InetSocketAddress" include nil nil [178 212])
+            ("java.net.PasswordAuthentication" include nil nil [213 252])
+            ("java.net.Proxy" include nil nil [253 275])
+            ("java.net.URL" include nil nil [276 296])
+            ("java.net.URLConnection" include nil nil [297 327])
+            ("java.time.LocalDateTime" include nil nil [328 359])
+            ("java.time.temporal.ChronoUnit" include nil nil [360 397])
+            ("java.util.ArrayList" include nil nil [398 425])
+            ("java.util.Base64" include nil nil [426 450])
+            ("java.util.HashSet" include nil nil [451 476])
+            ("java.util.List" include nil nil [477 499])
+            ("java.util.ListIterator" include nil nil [500 530])
+            ("java.util.Set" include nil nil [531 552])
+            ("java.util.StringTokenizer" include nil nil [553 586])
+            ("com.sun.jersey.api.client.Client" include nil nil [588 628])
+            ("com.sun.jersey.api.client.ClientResponse" include nil nil [629 677])
+            ("com.sun.jersey.api.client.GenericType" include nil nil [678 723])
+            ("com.sun.jersey.api.client.WebResource" include nil nil [724 769])
+            ("com.sun.jersey.client.urlconnection.HttpURLConnectionFactory" include nil nil [770 838])
+            ("com.sun.jersey.client.urlconnection.URLConnectionClientHandler" include nil nil [839 909])
+            ("spire.commons.logger.Key" include nil nil [911 943])
+            ("spire.commons.logger.Logger" include nil nil [944 979])
+            ("spire.commons.logger.LoggerFactory" include nil nil [980 1022])
+            ("spire.commons.logger.annotations.Loggable" include nil nil [1023 1072])
+            ("spire.crm.scrap.entity.CrawlURL" include nil nil [1073 1112])
+            ("spire.crm.scrap.github.entity.GitHubUser" include nil nil [1113 1161])
+            ("spire.crm.scrap.github.entity.GitHubUserProfile" include nil nil [1162 1217])
+            ("spire.crm.scrap.github.entity.Language" include nil nil [1218 1264])
+            ("spire.crm.scrap.github.entity.Organization" include nil nil [1265 1315])
+            ("spire.crm.scrap.github.entity.Owner" include nil nil [1316 1359])
+            ("spire.crm.scrap.github.entity.Repo" include nil nil [1360 1402])
+            ("RestApiScrapUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1474 1553])
+                    ("website" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1555 1585])
+                    ("_instance" variable
+                       (:typemodifiers ("private" "static" "volatile")
+                        :type "RestApiScrapUtil")
+                        (reparse-symbol class_member_declaration) [1587 1638])
+                    ("RestApiScrapUtil" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [1641 1673])
+                    ("init" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("theWebsite" variable (:type "String") (reparse-symbol formal_parameters) [1752 1769]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1728 2081])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static")
+                        :type "RestApiScrapUtil")
+                        (reparse-symbol class_member_declaration) [2260 2451])
+                    ("getLanguage" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("json" variable (:type "String") (reparse-symbol formal_parameters) [2713 2724]))                          )
+                        (reparse-symbol class_member_declaration) [2701 3261])
+                    ("fireGET" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [3493 3503]))                          
+                        :type "ClientResponse")
+                        (reparse-symbol class_member_declaration) [3462 4691])
+                    ("getUserUrls" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [4976 4986])
+                            ("totalPages" variable (:type "int") (reparse-symbol formal_parameters) [4988 5002]))                          )
+                        (reparse-symbol class_member_declaration) [4964 5729])
+                    ("getGitHubUser" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [5975 5985]))                          
+                        :type "GitHubUserProfile")
+                        (reparse-symbol class_member_declaration) [5936 6220])
+                    ("getOrganizations" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [6460 6470]))                          )
+                        (reparse-symbol class_member_declaration) [6443 6593])
+                    ("getRepositories" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [6814 6824]))                          )
+                        (reparse-symbol class_member_declaration) [6798 6939])
+                    ("fillLanguagesForRepositories" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "repositories") (reparse-symbol formal_parameters) [7160 7172]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7108 7572])
+                    ("getGitHubUserProfile" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("gitHubUser" variable (:type "GitHubUser") (reparse-symbol formal_parameters) [7834 7855]))                          
+                        :type "GitHubUserProfile")
+                        (reparse-symbol class_member_declaration) [7787 10918])
+                    ("getMessage" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "Exception") (reparse-symbol formal_parameters) [11152 11163]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [11127 11282])
+                    ("ConnectionFactory" type
+                       (:interfaces ("HttpURLConnectionFactory")
+                        :members 
+                          ( ("proxy" variable
+                               (:typemodifiers ("private")
+                                :type "spire.crm.scrap.util.ProxyManager.Proxy")
+                                (reparse-symbol class_member_declaration) [11425 11479])
+                            ("ConnectionFactory" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("proxy" variable (:type "spire.crm.scrap.util.ProxyManager.Proxy") (reparse-symbol formal_parameters) [11508 11553]))                                  )
+                                (reparse-symbol class_member_declaration) [11483 11583])
+                            ("initProxyAndGetConnection" function
+                               (:throws ("IOException")
+                                :typemodifiers ("private")
+                                :arguments 
+                                  ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [11846 11853]))                                  
+                                :type "URLConnection")
+                                (reparse-symbol class_member_declaration) [11798 12660])
+                            ("getHttpURLConnection" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("url" variable (:type "URL") (reparse-symbol formal_parameters) [12944 12951]))                                  
+                                :type "HttpURLConnection")
+                                (reparse-symbol class_member_declaration) [12898 13041]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [11285 13044]))                  
+                :type "class")
+                nil [1440 13047]))          
+    :file "RestApiScrapUtil.java"
+    :pointmax 13048
+    :fsize 13047
+    :lastmodtime '(22028 63894 128294 270000)
+    :unmatched-syntax '((GT 7158 . 7159) (IDENTIFIER 7149 . 7153) (LT 7153 . 7154) (GT 6796 . 6797) (PUBLIC 6780 . 6786) (LT 6791 . 6792) (GT 6441 . 6442) (PUBLIC 6417 . 6423) (LT 6428 . 6429) (GT 4962 . 4963) (PUBLIC 4943 . 4949) (LT 4953 . 4954) (GT 2699 . 2700) (PUBLIC 2679 . 2685) (LT 2690 . 2691))
+    )
+   )
+  :file "!home!vkarthic!spirework!java!web-scrapper!src!main!java!spire!crm!scrap!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

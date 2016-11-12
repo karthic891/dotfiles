@@ -1,0 +1,9 @@
+;; Object few/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "few/"
+  :tables
+  (list
+)
+  :file "!home!karthic!few!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

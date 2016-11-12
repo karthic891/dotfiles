@@ -1,0 +1,101 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "QueryParser.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("spire.match.util" package nil nil [1 26])
+            ("java.io.IOException" include nil nil [28 55])
+            ("java.net.URLEncoder" include nil nil [56 83])
+            ("java.util.ArrayList" include nil nil [84 111])
+            ("java.util.HashMap" include nil nil [112 137])
+            ("java.util.HashSet" include nil nil [138 163])
+            ("java.util.List" include nil nil [164 186])
+            ("java.util.Map" include nil nil [187 208])
+            ("java.util.Set" include nil nil [209 230])
+            ("javax.ws.rs.client.Invocation.Builder" include nil nil [232 277])
+            ("javax.ws.rs.core.MediaType" include nil nil [278 312])
+            ("javax.ws.rs.core.UriBuilder" include nil nil [313 348])
+            ("org.codehaus.jackson.JsonParseException" include nil nil [350 397])
+            ("org.codehaus.jackson.map.JsonMappingException" include nil nil [398 451])
+            ("org.codehaus.jackson.map.ObjectMapper" include nil nil [452 497])
+            ("org.glassfish.jersey.client.ClientConfig" include nil nil [498 546])
+            ("spire.commons.logger.Key" include nil nil [547 579])
+            ("spire.commons.logger.Logger" include nil nil [581 616])
+            ("spire.commons.logger.LoggerFactory" include nil nil [617 659])
+            ("spire.core.client.SpireClient" include nil nil [660 697])
+            ("spire.core.client.SpireClientBuilder" include nil nil [698 742])
+            ("spire.core.client.SpireSyncBuilder" include nil nil [743 785])
+            ("spire.core.client.SpireWebTarget" include nil nil [786 826])
+            ("spire.core.tagcloud.skill.bean.RelatedTermBean" include nil nil [827 881])
+            ("spire.core.tagcloud.skill.bean.SkillBean" include nil nil [882 930])
+            ("spire.match.entities.EnhancedQuery" include nil nil [931 973])
+            ("spire.match.entities.Skill" include nil nil [974 1008])
+            ("spire.match.entities.SkillConfig" include nil nil [1009 1049])
+            ("spire.match.entities.CloudSkill" include nil nil [1050 1089])
+            ("spire.match.entities.CloudSkill.CloudType" include nil nil [1090 1139])
+            ("QueryParser" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1198 1278])
+                    ("mapper" variable
+                       (:typemodifiers ("private" "final" "static")
+                        :type "ObjectMapper")
+                        (reparse-symbol class_member_declaration) [1280 1342])
+                    ("main" function
+                       (:throws ("JsonParseException" "JsonMappingException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [1369 1382]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1345 2157])
+                    ("addDoubleQuotes" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("query" variable (:type "String") (reparse-symbol formal_parameters) [2195 2207])
+                            ("type" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2209 2222]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2160 3737])
+                    ("parseQuery" function
+                       (:throws ("JsonParseException" "JsonMappingException" "IOException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("configObj" variable (:type "SkillConfig") (reparse-symbol formal_parameters) [3779 3800]))                          
+                        :type "EnhancedQuery")
+                        (reparse-symbol class_member_declaration) [3740 5216])
+                    ("getSkillCloud" function
+                       (:constructor-flag t
+                        :throws ("JsonParseException" "JsonMappingException" "IOException")
+                        :arguments 
+                          ( ("termName" variable (:type "String") (reparse-symbol formal_parameters) [5265 5280])
+                            ("configObj" variable (:type "SkillConfig") (reparse-symbol formal_parameters) [5282 5303]))                          )
+                        (reparse-symbol class_member_declaration) [5251 7313]))                  
+                :type "class")
+                nil [1170 7315]))          
+      :file "QueryParser.java"
+      :pointmax 7316
+      :fsize 7315
+      :lastmodtime '(22341 35543 50005 310000)
+      :unmatched-syntax nil)
+    (semanticdb-table "zeenat-hamirani-12879137.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "zeenat-hamirani-12879137.json"
+      :pointmax 10118
+      :fsize 10117
+      :lastmodtime '(22342 40316 217413 12000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

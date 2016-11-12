@@ -1,0 +1,32 @@
+;; Object common/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "common/"
+  :tables
+  (list
+    (semanticdb-table "RequisitionService.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("spire.talent.biz.search.common" package nil nil [1 40])
+            ("java.util.List" include nil nil [42 64])
+            ("spire.commons.search.beans.SearchContext" include nil nil [66 114])
+            ("spire.talent.biz.rules.bean.MatchInput" include nil nil [115 161])
+            ("RequisitionService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("buildContext" function
+                       (:throws ("Exception")
+                        :arguments 
+                          ( ("reqId" variable (:type "String") (reparse-symbol formal_parameters) [312 324])
+                            ("" variable (:type "candidateIds") (reparse-symbol formal_parameters) [339 351]))                          
+                        :type "MatchInput")
+                        (reparse-symbol interface_member_declaration) [288 370]))                  
+                :type "interface")
+                nil [163 373]))          
+      :file "RequisitionService.java"
+      :pointmax 374
+      :fsize 373
+      :lastmodtime '(22416 27937 201568 291000)
+      :unmatched-syntax '((GT 337 . 338) (IDENTIFIER 326 . 330) (LT 330 . 331) (SEMICOLON 285 . 286) (THROWS 269 . 275) (PAREN_BLOCK 247 . 268) (GT 227 . 228) (PUBLIC 202 . 208) (LT 213 . 214))))
+  :file "!home!karthic!spirework!java!search-biz-web!src!main!java!spire!talent!biz!search!common!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,221 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables (list 
+   (semanticdb-table "Utils.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.crm.scrap.util" package nil nil [13 42])
+            ("java.io.BufferedWriter" include nil nil [45 75])
+            ("java.io.File" include nil nil [76 96])
+            ("java.io.FileInputStream" include nil nil [97 128])
+            ("java.io.FileNotFoundException" include nil nil [129 166])
+            ("java.io.FileOutputStream" include nil nil [167 199])
+            ("java.io.FileWriter" include nil nil [200 226])
+            ("java.io.FilenameFilter" include nil nil [227 257])
+            ("java.io.IOException" include nil nil [258 285])
+            ("java.io.InputStream" include nil nil [286 313])
+            ("java.io.OutputStreamWriter" include nil nil [314 348])
+            ("java.net.MalformedURLException" include nil nil [349 387])
+            ("java.net.URL" include nil nil [388 408])
+            ("java.nio.charset.StandardCharsets" include nil nil [409 450])
+            ("java.util.ArrayList" include nil nil [451 478])
+            ("java.util.Collection" include nil nil [479 507])
+            ("java.util.Collections" include nil nil [508 537])
+            ("java.util.HashSet" include nil nil [538 563])
+            ("java.util.List" include nil nil [564 586])
+            ("java.util.Properties" include nil nil [587 615])
+            ("java.util.Scanner" include nil nil [616 641])
+            ("java.util.Set" include nil nil [642 663])
+            ("javax.ws.rs.core.MediaType" include nil nil [665 699])
+            ("org.apache.spark.api.java.function.Function" include nil nil [701 752])
+            ("org.apache.uima.UIMAException" include nil nil [753 790])
+            ("org.codehaus.jackson.jaxrs.JacksonJsonProvider" include nil nil [791 845])
+            ("com.fasterxml.jackson.core.JsonProcessingException" include nil nil [847 905])
+            ("com.fasterxml.jackson.databind.DeserializationFeature" include nil nil [906 967])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [968 1019])
+            ("com.sun.jersey.api.client.Client" include nil nil [1020 1060])
+            ("com.sun.jersey.api.client.ClientResponse" include nil nil [1061 1109])
+            ("com.sun.jersey.api.client.GenericType" include nil nil [1110 1155])
+            ("com.sun.jersey.api.client.WebResource" include nil nil [1156 1201])
+            ("com.sun.jersey.api.client.WebResource.Builder" include nil nil [1202 1255])
+            ("com.sun.jersey.api.client.config.DefaultClientConfig" include nil nil [1256 1316])
+            ("spire.commons.Context" include nil nil [1318 1347])
+            ("spire.commons.dfs.gateway.DFSGateway" include nil nil [1348 1392])
+            ("spire.commons.dfs.gateway.JCloudDFSGateway" include nil nil [1393 1443])
+            ("spire.commons.dfs.gateway.utils.Settings" include nil nil [1444 1492])
+            ("spire.commons.logger.Key" include nil nil [1493 1525])
+            ("spire.commons.logger.Logger" include nil nil [1526 1561])
+            ("spire.commons.logger.LoggerFactory" include nil nil [1562 1604])
+            ("spire.commons.logger.annotations.Loggable" include nil nil [1605 1654])
+            ("spire.commons.userservice.bean.LoginResponseBean" include nil nil [1655 1711])
+            ("spire.commons.utils.ContextUtil" include nil nil [1712 1751])
+            ("spire.core.extraction.pipelines.ResumePipeLineFactory" include nil nil [1752 1813])
+            ("spire.core.extraction.request.DomainParameter" include nil nil [1814 1867])
+            ("spire.core.extraction.resume.response.ResumeDetailsResponse" include nil nil [1868 1935])
+            ("spire.core.extraction.resume.response.SkillDetailsResponse" include nil nil [1936 2002])
+            ("spire.crm.profiles.bean.Profile" include nil nil [2003 2042])
+            ("spire.crm.scrap.LinkedInProfileParser" include nil nil [2043 2088])
+            ("spire.crm.scrap.entity.CrawledProfile" include nil nil [2089 2134])
+            ("spire.crm.scrap.entity.LinkedInProfile" include nil nil [2135 2181])
+            ("spire.crm.scrap.entity.Profiles" include nil nil [2182 2221])
+            ("spire.crm.scrap.github.entity.GitHubUserProfile" include nil nil [2222 2277])
+            ("spire.crm.scrap.multithread.ConfigCache" include nil nil [2278 2325])
+            ("spire.crm.scrap.parsers.ProfileParser" include nil nil [2326 2371])
+            ("spire.social.entity.Social" include nil nil [2372 2406])
+            ("spire.talent.common.beans.CollectionEntity" include nil nil [2407 2457])
+            ("spire.talent.entity.profileservice.beans.CandidateBean" include nil nil [2458 2520])
+            ("spire.talent.entity.profileservice.beans.CandidateSkillMapBean" include nil nil [2521 2591])
+            ("Utils" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2652 2727])
+                    ("configCache" variable
+                       (:typemodifiers ("private" "static")
+                        :type "ConfigCache")
+                        (reparse-symbol class_member_declaration) [2731 2770])
+                    ("EMPTY_STRING" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2774 2819])
+                    ("NEW_LINE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2821 2864])
+                    ("SERVICE_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2866 2923])
+                    ("TENANT_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2925 2973])
+                    ("CRAWL_SOURCE_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2975 3033])
+                    ("isNullOrEmpty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("value" variable (:type "String") (reparse-symbol formal_parameters) [3109 3121]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3073 3228])
+                    ("persistProfile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("profile" variable (:type "Profile") (reparse-symbol formal_parameters) [5781 5796])
+                            ("toUpdate" variable (:type "boolean") (reparse-symbol formal_parameters) [5798 5814]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5745 7345])
+                    ("persistProfiles" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "profiles") (reparse-symbol formal_parameters) [7610 7618])
+                            ("toUpdate" variable (:type "boolean") (reparse-symbol formal_parameters) [7620 7636]))                          )
+                        (reparse-symbol class_member_declaration) [7580 9585])
+                    ("initWebResource" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("webResource" variable (:type "WebResource") (reparse-symbol formal_parameters) [9627 9650]))                          
+                        :type "Builder")
+                        (reparse-symbol class_member_declaration) [9589 10373])
+                    ("mapCrawledProfileToGenericProfile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("crawledProfile" variable (:type "CrawledProfile") (reparse-symbol formal_parameters) [10434 10463]))                          
+                        :type "Profile")
+                        (reparse-symbol class_member_declaration) [10378 10792])
+                    ("createContext" function
+                       (:typemodifiers ("public" "static")
+                        :type "Context")
+                        (reparse-symbol class_member_declaration) [10888 11065])
+                    ("writeToFile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("fileName" variable (:type "String") (reparse-symbol formal_parameters) [11100 11115])
+                            ("content" variable (:type "String") (reparse-symbol formal_parameters) [11117 11131]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11069 11450])
+                    ("writeToFile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("fileName" variable (:type "String") (reparse-symbol formal_parameters) [11485 11500])
+                            ("" variable (:type "collection") (reparse-symbol formal_parameters) [11521 11531]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11454 11852])
+                    ("validateFile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("filePath" variable (:type "String") (reparse-symbol formal_parameters) [11888 11903]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [11856 12088])
+                    ("validateDirectory" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("folderPath" variable (:type "String") (reparse-symbol formal_parameters) [12129 12146]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12092 12338])
+                    ("makeDirectory" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("directory" variable (:type "String") (reparse-symbol formal_parameters) [12375 12391]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [12342 12479])
+                    ("extractImageAndUploadToS3" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("imageURL" variable (:type "String") (reparse-symbol formal_parameters) [12530 12545])
+                            ("fileName" variable (:type "String") (reparse-symbol formal_parameters) [12547 12562]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [12483 13793])
+                    ("initConfigCache" function
+                       (:typemodifiers ("public" "static")
+                        :type "ConfigCache")
+                        (reparse-symbol class_member_declaration) [13797 15066])
+                    ("writeJsonToFile" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("outputDir" variable (:type "String") (reparse-symbol formal_parameters) [15107 15123])
+                            ("subFolder" variable (:type "String") (reparse-symbol formal_parameters) [15125 15141])
+                            ("fileName" variable (:type "String") (reparse-symbol formal_parameters) [15143 15158])
+                            ("profile" variable (:type "Object") (reparse-symbol formal_parameters) [15160 15174]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15070 15824])
+                    ("generateFileNameFromURL" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("url" variable (:type "String") (reparse-symbol formal_parameters) [15873 15883]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [15828 16280])
+                    ("readProfilesFromFileSystem" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("path" variable (:type "String") (reparse-symbol formal_parameters) [16338 16349]))                          )
+                        (reparse-symbol class_member_declaration) [16311 16978])
+                    ("extractSkillsFromSummary" function
+                       (:constructor-flag t
+                        :throws ("UIMAException" "IOException")
+                        :arguments 
+                          ( ("summary" variable (:type "String") (reparse-symbol formal_parameters) [18492 18506]))                          )
+                        (reparse-symbol class_member_declaration) [18467 19651]))                  
+                :type "class")
+                nil [2629 19653]))          
+    :file "Utils.java"
+    :pointmax 19654
+    :fsize 19653
+    :lastmodtime '(22221 25444 614924 582000)
+    :unmatched-syntax '((GT 18465 . 18466) (PUBLIC 18441 . 18447) (LT 18458 . 18459) (GT 16309 . 16310) (PUBLIC 16284 . 16290) (LT 16302 . 16303) (GT 11519 . 11520) (IDENTIFIER 11502 . 11512) (LT 11512 . 11513) (GT 7608 . 7609) (IDENTIFIER 7596 . 7600) (LT 7600 . 7601) (GT 7578 . 7579) (PUBLIC 7553 . 7559) (LT 7571 . 7572) (SEMICOLON 5561 . 5562) (PAREN_BLOCK 5018 . 5020) (GT 5017 . 5018) (COMMA 5009 . 5010) (LT 5001 . 5002) (NEW 4989 . 4992) (EQ 4987 . 4988) (GT 4969 . 4970) (COMMA 4961 . 4962) (LT 4953 . 4954) (SEMICOLON 4849 . 4850) (PAREN_BLOCK 4533 . 4535) (GT 4532 . 4533) (COMMA 4516 . 4517) (LT 4500 . 4501) (NEW 4488 . 4491) (EQ 4486 . 4487) (GT 4440 . 4441) (COMMA 4424 . 4425) (LT 4408 . 4409) (SEMICOLON 4286 . 4287) (PAREN_BLOCK 3456 . 3458) (GT 3455 . 3456) (COMMA 3446 . 3447) (LT 3431 . 3432) (NEW 3419 . 3422) (EQ 3417 . 3418) (GT 3379 . 3380) (COMMA 3370 . 3371) (PUBLIC 3327 . 3333) (LT 3355 . 3356))
+    )
+   (semanticdb-table "Settings.java"
+    :file "Settings.java"
+    :fsize 11794
+    :lastmodtime '(22172 47970 162779 323000)
+    )
+   )
+  :file "!home!karthic!spirework!java!useless!web-scrapper!src!main!java!spire!crm!scrap!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

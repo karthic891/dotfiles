@@ -1,0 +1,161 @@
+;; Object coveragedata/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "coveragedata/"
+  :tables
+  (list
+    (semanticdb-table "TouchCollector.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("net.sourceforge.cobertura.coveragedata" package nil nil [972 1019])
+            ("net.sourceforge.cobertura.CoverageIgnore" include nil nil [1021 1069])
+            ("net.sourceforge.cobertura.instrument.pass3.AbstractCodeProvider" include nil nil [1070 1141])
+            ("org.slf4j.Logger" include nil nil [1142 1166])
+            ("org.slf4j.LoggerFactory" include nil nil [1167 1198])
+            ("java.lang.reflect.Method" include nil nil [1200 1232])
+            ("java.util.Arrays" include nil nil [1233 1257])
+            ("java.util.Map" include nil nil [1258 1279])
+            ("java.util.concurrent.ConcurrentHashMap" include nil nil [1280 1326])
+            ("TouchCollector" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [1514 1597])
+                    ("registerClass" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("" variable (:type "classa") (reparse-symbol formal_parameters) [1744 1750]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1689 1792])
+                    ("registerClass" function
+                       (:throws ("ClassNotFoundException")
+                        :typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("classa" variable (:type "String") (reparse-symbol formal_parameters) [2520 2533]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2474 4047])
+                    ("applyTouchesOnProjectData" function
+                       (:typemodifiers ("public" "static" "synchronized")
+                        :arguments 
+                          ( ("projectData" variable (:type "ProjectData") (reparse-symbol formal_parameters) [4112 4135]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4050 4515])
+                    ("applyTouchesToSingleClassOnProjectData" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("classData" variable
+                               (:typemodifiers ("final")
+                                :type "ClassData")
+                                (reparse-symbol formal_parameters) [4581 4606])
+                            ("" variable (:type "c") (reparse-symbol formal_parameters) [4623 4624]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4518 5288])
+                    ("maybeCanonicalName" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("" variable (:type "c") (reparse-symbol formal_parameters) [5350 5351]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5294 5793])
+                    ("ApplyToClassDataLightClassmapListener" type
+                       (:typemodifiers ("private" "static")
+                        :interfaces ("LightClassmapListener")
+                        :members 
+                          ( ("classData" variable
+                               (:typemodifiers ("private" "final")
+                                :type "ClassData")
+                                (reparse-symbol class_member_declaration) [5975 6009])
+                            ("res" variable
+                               (:dereference 1
+                                :typemodifiers ("private" "final")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [6012 6036])
+                            ("currentLine" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [6040 6068])
+                            ("jumpsInLine" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [6071 6099])
+                            ("switchesInLine" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [6102 6133])
+                            ("updateLine" function
+                               (:typemodifiers ("private")
+                                :arguments 
+                                  ( ("new_line" variable (:type "int") (reparse-symbol formal_parameters) [6161 6173]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6137 6292])
+                            ("ApplyToClassDataLightClassmapListener" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("cd" variable (:type "ClassData") (reparse-symbol formal_parameters) [6341 6353])
+                                    ("res" variable
+                                       (:dereference 1
+                                        :type "int")
+                                        (reparse-symbol formal_parameters) [6355 6364]))                                  )
+                                (reparse-symbol class_member_declaration) [6296 6409])
+                            ("setSource" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [6435 6448]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6413 6534])
+                            ("setClazz" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("" variable (:type "clazz") (reparse-symbol formal_parameters) [6568 6573]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6538 6580])
+                            ("setClazz" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("clazz" variable (:type "String") (reparse-symbol formal_parameters) [6605 6617]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6584 6624])
+                            ("putLineTouchPoint" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("classLine" variable (:type "int") (reparse-symbol formal_parameters) [6658 6671])
+                                    ("counterId" variable (:type "int") (reparse-symbol formal_parameters) [6673 6686])
+                                    ("methodName" variable (:type "String") (reparse-symbol formal_parameters) [6692 6709])
+                                    ("methodDescription" variable (:type "String") (reparse-symbol formal_parameters) [6711 6735]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6628 6880])
+                            ("putSwitchTouchPoint" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("classLine" variable (:type "int") (reparse-symbol formal_parameters) [6916 6929])
+                                    ("maxBranches" variable (:type "int") (reparse-symbol formal_parameters) [6931 6946])
+                                    ("" variable (:type "counterIds") (reparse-symbol formal_parameters) [6959 6969]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [6884 7287])
+                            ("putJumpTouchPoint" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("classLine" variable (:type "int") (reparse-symbol formal_parameters) [7321 7334])
+                                    ("trueCounterId" variable (:type "int") (reparse-symbol formal_parameters) [7336 7353])
+                                    ("falseCounterId" variable (:type "int") (reparse-symbol formal_parameters) [7359 7377]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [7291 7643])
+                            ("getOrCreateLine" function
+                               (:typemodifiers ("private")
+                                :arguments 
+                                  ( ("classLine" variable (:type "int") (reparse-symbol formal_parameters) [7680 7693]))                                  
+                                :type "LineData")
+                                (reparse-symbol class_member_declaration) [7647 7842]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [5813 7845]))                  
+                :type "class")
+                nil [1344 7847]))          
+      :file "TouchCollector.java"
+      :pointmax 7848
+      :fsize 7847
+      :lastmodtime '(22559 3904 986297 535000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!cobertura!cobertura!src!main!java!net!sourceforge!cobertura!coveragedata!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object generic/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "generic/"
+  :tables
+  (list
+    (semanticdb-table "amitagrawal1982.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "amitagrawal1982.json"
+      :pointmax 15313
+      :fsize 15312
+      :lastmodtime '(22341 58912 790133 167000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!useless!ayyo!new!generic!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

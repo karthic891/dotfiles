@@ -1,0 +1,117 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "SpireConfigManager.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.config" package nil nil [2 31])
+            ("spire.commons.Context" include nil nil [34 63])
+            ("spire.commons.config.exception.SpireConfigurationException" include nil nil [64 130])
+            ("spire.commons.config.impl.ArchaiusConfigurationManager" include nil nil [131 193])
+            ("spire.commons.config.impl.DynamicConfigurationManager" include nil nil [194 255])
+            ("spire.commons.logger.Key" include nil nil [256 288])
+            ("spire.commons.logger.Logger" include nil nil [289 324])
+            ("spire.commons.logger.LoggerFactory" include nil nil [325 367])
+            ("spire.commons.samples.SimpleKeyValueLog" include nil nil [368 415])
+            ("spire.commons.utils.ContextUtil" include nil nil [416 455])
+            ("SpireConfigManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [768 846])
+                    ("_instance" variable
+                       (:typemodifiers ("private" "static")
+                        :type "DynamicConfigurationManager")
+                        (reparse-symbol class_member_declaration) [883 936])
+                    ("isInitialized" variable
+                       (:typemodifiers ("private" "volatile" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1009 1063])
+                    ("setup" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [1337 1355])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [1357 1382]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1312 1493])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static")
+                        :type "DynamicConfigurationManager")
+                        (reparse-symbol class_member_declaration) [1755 1909])
+                    ("init" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [2042 2067]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2017 2837])
+                    ("initConfigManager" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [3011 3029])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [3031 3056]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2973 3587]))                  
+                :type "class")
+                nil [732 3589]))          
+    :file "SpireConfigManager.java"
+    :pointmax 3590
+    :fsize 3589
+    :lastmodtime '(21993 49758 119645 671000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Test.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.config" package nil nil [1 30])
+            ("Test" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [73 86]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49 150]))                  
+                :type "class")
+                nil [32 152]))          
+    :file "Test.java"
+    :pointmax 153
+    :fsize 152
+    :lastmodtime '(22006 31029 837133 975000)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Hello.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.config" package nil nil [1 30])
+            ("java.util.List" include nil nil [32 54])
+            ("java.util.ArrayList" include nil nil [55 82])
+            ("Hello" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [126 139]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [102 224]))                  
+                :type "class")
+                nil [84 226]))          
+    :file "Hello.java"
+    :pointmax 238
+    :fsize 226
+    :lastmodtime '(22006 34697 681264 595000)
+    :unmatched-syntax '((IDENTIFIER 228 . 238))
+    )
+   )
+  :file "!home!vkarthic!spirework!java!spire-config!src!main!java!spire!commons!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

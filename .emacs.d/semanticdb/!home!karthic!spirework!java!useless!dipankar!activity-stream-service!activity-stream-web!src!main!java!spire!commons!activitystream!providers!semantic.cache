@@ -1,0 +1,181 @@
+;; Object providers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "providers/"
+  :tables (list 
+   (semanticdb-table "SpireReqRespLogFilter.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.activitystream.providers" package nil nil [1 48])
+            ("java.io.ByteArrayInputStream" include nil nil [50 86])
+            ("java.io.ByteArrayOutputStream" include nil nil [87 124])
+            ("java.io.IOException" include nil nil [125 152])
+            ("java.io.InputStream" include nil nil [153 180])
+            ("java.io.PrintWriter" include nil nil [181 208])
+            ("javax.servlet.Filter" include nil nil [210 238])
+            ("javax.servlet.FilterChain" include nil nil [239 272])
+            ("javax.servlet.FilterConfig" include nil nil [273 307])
+            ("javax.servlet.ServletException" include nil nil [308 346])
+            ("javax.servlet.ServletInputStream" include nil nil [347 387])
+            ("javax.servlet.ServletOutputStream" include nil nil [388 429])
+            ("javax.servlet.ServletRequest" include nil nil [430 466])
+            ("javax.servlet.ServletResponse" include nil nil [467 504])
+            ("javax.servlet.http.HttpServletRequest" include nil nil [505 550])
+            ("javax.servlet.http.HttpServletRequestWrapper" include nil nil [551 603])
+            ("javax.servlet.http.HttpServletResponse" include nil nil [604 650])
+            ("javax.servlet.http.HttpServletResponseWrapper" include nil nil [651 704])
+            ("spire.commons.logger.Logger" include nil nil [705 740])
+            ("spire.commons.logger.LoggerFactory" include nil nil [741 783])
+            ("SpireReqRespLogFilter" type
+               (:typemodifiers ("public")
+                :interfaces ("Filter")
+                :members 
+                  ( ("s_logger" variable
+                       (:typemodifiers ("final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [842 926])
+                    ("ByteArrayServletStream" type
+                       (:typemodifiers ("private" "static")
+                        :superclasses "ServletOutputStream"
+                        :members 
+                          ( ("baos" variable (:type "ByteArrayOutputStream") (reparse-symbol class_member_declaration) [1006 1033])
+                            ("ByteArrayServletStream" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("baos" variable (:type "ByteArrayOutputStream") (reparse-symbol formal_parameters) [1060 1086]))                                  )
+                                (reparse-symbol class_member_declaration) [1037 1114])
+                            ("write" function
+                               (:throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("param" variable (:type "int") (reparse-symbol formal_parameters) [1136 1145]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [1118 1193]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [929 1196])
+                    ("ByteArrayPrintWriter" type
+                       (:typemodifiers ("private" "static")
+                        :members 
+                          ( ("baos" variable
+                               (:typemodifiers ("private")
+                                :type "ByteArrayOutputStream")
+                                (reparse-symbol class_member_declaration) [1246 1311])
+                            ("pw" variable
+                               (:typemodifiers ("private")
+                                :type "PrintWriter")
+                                (reparse-symbol class_member_declaration) [1315 1362])
+                            ("sos" variable
+                               (:typemodifiers ("private")
+                                :type "ServletOutputStream")
+                                (reparse-symbol class_member_declaration) [1366 1433])
+                            ("getWriter" function
+                               (:typemodifiers ("public")
+                                :type "PrintWriter")
+                                (reparse-symbol class_member_declaration) [1437 1487])
+                            ("getStream" function
+                               (:typemodifiers ("public")
+                                :type "ServletOutputStream")
+                                (reparse-symbol class_member_declaration) [1491 1550])
+                            ("toByteArray" function (:type "byte[]") (reparse-symbol class_member_declaration) [1554 1610]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [1199 1613])
+                    ("BufferedServletInputStream" type
+                       (:typemodifiers ("private")
+                        :superclasses "ServletInputStream"
+                        :members 
+                          ( ("bais" variable (:type "ByteArrayInputStream") (reparse-symbol class_member_declaration) [1689 1715])
+                            ("BufferedServletInputStream" function
+                               (:constructor-flag t
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("bais" variable (:type "ByteArrayInputStream") (reparse-symbol formal_parameters) [1753 1778]))                                  )
+                                (reparse-symbol class_member_declaration) [1719 1806])
+                            ("available" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1810 1866])
+                            ("read" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1870 1916])
+                            ("read" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("buf" variable
+                                       (:dereference 1
+                                        :type "byte")
+                                        (reparse-symbol formal_parameters) [1936 1946])
+                                    ("off" variable (:type "int") (reparse-symbol formal_parameters) [1948 1955])
+                                    ("len" variable (:type "int") (reparse-symbol formal_parameters) [1957 1964]))                                  
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [1920 2007]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [1616 2011])
+                    ("BufferedRequestWrapper" type
+                       (:typemodifiers ("private")
+                        :superclasses "HttpServletRequestWrapper"
+                        :members 
+                          ( ("bais" variable (:type "ByteArrayInputStream") (reparse-symbol class_member_declaration) [2090 2116])
+                            ("baos" variable (:type "ByteArrayOutputStream") (reparse-symbol class_member_declaration) [2120 2147])
+                            ("bsis" variable (:type "BufferedServletInputStream") (reparse-symbol class_member_declaration) [2151 2183])
+                            ("buffer" variable
+                               (:dereference 1
+                                :type "byte")
+                                (reparse-symbol class_member_declaration) [2187 2201])
+                            ("BufferedRequestWrapper" function
+                               (:constructor-flag t
+                                :throws ("IOException")
+                                :typemodifiers ("public")
+                                :arguments 
+                                  ( ("req" variable (:type "HttpServletRequest") (reparse-symbol formal_parameters) [2235 2257]))                                  )
+                                (reparse-symbol class_member_declaration) [2205 2533])
+                            ("getInputStream" function
+                               (:typemodifiers ("public")
+                                :type "ServletInputStream")
+                                (reparse-symbol class_member_declaration) [2537 2764])
+                            ("getBuffer" function
+                               (:typemodifiers ("public")
+                                :type "byte[]")
+                                (reparse-symbol class_member_declaration) [2768 2817]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [2014 2821])
+                    ("dumpRequest" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2824 2852])
+                    ("dumpResponse" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2854 2883])
+                    ("init" function
+                       (:throws ("ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("filterConfig" variable (:type "FilterConfig") (reparse-symbol formal_parameters) [2903 2928]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2886 3116])
+                    ("doFilter" function
+                       (:throws ("IOException" "ServletException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("servletRequest" variable (:type "ServletRequest") (reparse-symbol formal_parameters) [3151 3180])
+                            ("servletResponse" variable (:type "ServletResponse") (reparse-symbol formal_parameters) [3182 3213])
+                            ("filterChain" variable (:type "FilterChain") (reparse-symbol formal_parameters) [3215 3238]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3130 4141])
+                    ("destroy" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4144 4170]))                  
+                :type "class")
+                nil [785 4176]))          
+    :file "SpireReqRespLogFilter.java"
+    :pointmax 4177
+    :fsize 4176
+    :lastmodtime '(22320 24407 233074 807000)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!karthic!spirework!java!useless!dipankar!activity-stream-service!activity-stream-web!src!main!java!spire!commons!activitystream!providers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )

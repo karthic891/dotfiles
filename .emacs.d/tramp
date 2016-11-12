@@ -1,0 +1,42 @@
+;; -*- emacs-lisp -*- <16/11/11 20:22:32 /home/karthic/.emacs.d/tramp>
+;; Tramp connection history.  Don't change this file.
+;; You can delete it, forcing Tramp to reapply the checks.
+
+((["ssh" "root" "192.168.2.133" nil nil]
+  ("uname" "Linux 3.10.0-229.4.2.el7.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/bin" "/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("busybox" nil)
+  ("file-exists" "test -e")
+  ("readlink" "\\readlink")
+  ("stat" "\\stat")
+  ("id" "/usr/bin/id")
+  ("gid-integer" 0)
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("tmpdir" "/ssh:root@192.168.2.133:/tmp"))
+ (["scp" nil "192.168.2.75" nil nil]
+  nil)
+ (["method" "appuser" "192.168.2.75" nil nil]
+  nil)
+ (["ssh" "appuser" "192.168.2.75" nil nil]
+  ("uname" "Linux 3.10.0-229.el7.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/usr/bin" "/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("file-exists" "test -e")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("ls" "/usr/bin/ls --color=never")
+  ("ls-dired" t)
+  ("stat" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 1003)
+  ("readlink" "\\readlink")
+  ("gid-string" "appuser")))

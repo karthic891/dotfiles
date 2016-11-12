@@ -1,0 +1,329 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables
+  (list
+    (semanticdb-table "amitagrawal1982"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Amit Agrawal | LinkedIn" section nil nil [507 1935])
+            ("LinkedIn Home" section nil nil [1935 2310])
+            ("LinkedIn Home" section nil nil [2310 2342])
+            ("LinkedIn Home" section nil nil [2342 2470])
+            ("LinkedIn Home" section nil nil [2470 2936])
+            ("LinkedIn Home" section nil nil [2936 3321])
+            ("LinkedIn Home" section nil nil [3321 4281])
+            ("LinkedIn Home" section (:members 
+              ( ("LinkedIn Home" section nil nil [4575 5333]))              ) nil [4281 5333])
+            ("(function(n,r,a){r=window[n]=window[n]||{};r['jsecure_injectAlert']='control';r['jsecure_Dialog']='control';}('__li__lix_registry__'));" section nil nil [5333 7230])
+            ("Amit Agrawal" section (:members 
+              ( ("Amit Agrawal" anchor nil nil [7729 7732])
+                ("Amit Agrawal" section (:members 
+                  ( ("Syntel" anchor nil nil [8631 8634])
+                    ("Syntel" anchor nil nil [8802 8805])
+                    ("Syntel, Inc." anchor nil nil [8888 8891])
+                    ("Future Technologies, Inc" anchor nil nil [8980 8983])
+                    ("Indian Institute of Planning &amp; Management, New Delhi" anchor nil nil [9177 9180])
+                    ("Company Website" anchor nil nil [9551 9554])
+                    ("Join LinkedIn" section (:members 
+                      ( ("Join LinkedIn" anchor nil nil [9865 9868])
+                        ("As a LinkedIn member, you’ll join 400 million other professionals who are sharing connections, ideas, and opportunities." section nil nil [10091 10419])
+                        ("Summary" section nil nil [10419 11051])
+                        ("Experience" section (:members 
+                          ( ("Assistant Manager (Project Management - Business Analysts CoE: Insurance domain)" section (:members 
+                              ( ("Assistant Manager (Project Management - Business Analysts CoE: Insurance domain)" anchor nil nil [11191 11194]))                              ) nil [11174 11378])
+                            ("Assistant Manager (Project Management - Business Analysts CoE: Insurance domain)" section (:members 
+                              ( ("Assistant Manager (Project Management - Business Analysts CoE: Insurance domain)" anchor nil nil [11401 11404])
+                                ("Syntel" section (:members 
+                                  ( ("Syntel" anchor nil nil [11660 11663]))                                  ) nil [11634 13973])
+                                ("Assistant Manager, Presales / RFX Coordination / Knowledge Management" section (:members 
+                                  ( ("Assistant Manager, Presales / RFX Coordination / Knowledge Management" anchor nil nil [13990 13993]))                                  ) nil [13973 14177]))                              ) nil [11378 14177])
+                            ("Assistant Manager, Presales / RFX Coordination / Knowledge Management" section (:members 
+                              ( ("Assistant Manager, Presales / RFX Coordination / Knowledge Management" anchor nil nil [14200 14203])
+                                ("Syntel" section (:members 
+                                  ( ("Syntel" anchor nil nil [14439 14442]))                                  ) nil [14413 15941])
+                                ("Business Development" section (:members 
+                                  ( ("Business Development" anchor nil nil [15958 15961]))                                  ) nil [15941 16151]))                              ) nil [14177 16151])
+                            ("Business Development" section (:members 
+                              ( ("Business Development" anchor nil nil [16174 16177])
+                                ("Syntel, Inc." section (:members 
+                                  ( ("Syntel, Inc." anchor nil nil [16309 16312]))                                  ) nil [16283 16923])
+                                ("Business Development" section (:members 
+                                  ( ("Business Development" anchor nil nil [16940 16943]))                                  ) nil [16923 17162]))                              ) nil [16151 17162])
+                            ("Business Development" section (:members 
+                              ( ("Business Development" anchor nil nil [17185 17188])
+                                ("Future Technologies, Inc" section (:members 
+                                  ( ("Future Technologies, Inc" anchor nil nil [17320 17323]))                                  ) nil [17294 18002])
+                                ("Business Development" section (:members 
+                                  ( ("Business Development" anchor nil nil [18019 18022]))                                  ) nil [18002 18236]))                              ) nil [17162 18236])
+                            ("Business Development" section (:members 
+                              ( ("Business Development" anchor nil nil [18259 18262])
+                                ("IBS Software Services" section (:members 
+                                  ( ("IBS Software Services" anchor nil nil [18394 18397]))                                  ) nil [18368 18874])
+                                ("Business Development" section (:members 
+                                  ( ("Business Development" anchor nil nil [18891 18894]))                                  ) nil [18874 19108]))                              ) nil [18236 19108])
+                            ("Business Development" section (:members 
+                              ( ("Business Development" anchor nil nil [19131 19134])
+                                ("OTS Solutions India Pvt. Ltd." section (:members 
+                                  ( ("OTS Solutions India Pvt. Ltd." anchor nil nil [19266 19269]))                                  ) nil [19240 20240]))                              ) nil [19108 20240])
+                            ("Research Analyst - Business Development Group" section (:members 
+                              ( ("Research Analyst - Business Development Group" anchor nil nil [20263 20266])
+                                ("Perot Systems TSI India Ltd." section nil nil [20420 21229]))                              ) nil [20240 21229]))                          ) nil [11051 21229])
+                        ("Courses" section (:members 
+                          ( ("Indian Institute of Planning &amp; Management, New Delhi" section nil nil [21267 21472])
+                            ("Jagannath International Management School" section nil nil [21472 21694])
+                            ("Colonel&#39;s Central Academy" section nil nil [21694 21971]))                          ) nil [21229 21971])
+                        ("Certifications" section (:members 
+                          ( ("AINS 21 Property and Liability Insurance Principles" section (:members 
+                              ( ("AINS 21 Property and Liability Insurance Principles" anchor nil nil [22086 22089]))                              ) nil [22069 22322])
+                            ("AINS 21 Property and Liability Insurance Principles" section (:members 
+                              ( ("The Institutes" section (:members 
+                                  ( ("The Institutes" anchor nil nil [22427 22430]))                                  ) nil [22401 22663])
+                                ("LEAP II (Leadership Effectiveness Assessment Program)" section (:members 
+                                  ( ("LEAP II (Leadership Effectiveness Assessment Program)" anchor nil nil [22680 22683]))                                  ) nil [22663 22861]))                              ) nil [22322 22861])
+                            ("LEAP II (Leadership Effectiveness Assessment Program)" section (:members 
+                              ( ("Syntel" section (:members 
+                                  ( ("Syntel" anchor nil nil [22968 22971]))                                  ) nil [22942 23186])
+                                ("Structured Thinking &amp; Communication 3-day Workshop (No certificate)" section (:members 
+                                  ( ("Structured Thinking &amp; Communication 3-day Workshop (No certificate)" anchor nil nil [23203 23206]))                                  ) nil [23186 23390]))                              ) nil [22861 23390])
+                            ("Structured Thinking &amp; Communication 3-day Workshop (No certificate)" section (:members 
+                              ( ("Mind Matters" section (:members 
+                                  ( ("Mind Matters" anchor nil nil [23515 23518]))                                  ) nil [23489 23747])
+                                ("Sales Training" section (:members 
+                                  ( ("Sales Training" anchor nil nil [23764 23767]))                                  ) nil [23747 23977]))                              ) nil [23390 23977])
+                            ("Sales Training" section (:members 
+                              ( ("Gustav Käser Training International AS" section (:members 
+                                  ( ("Gustav Käser Training International AS" anchor nil nil [24045 24048]))                                  ) nil [24019 24327])
+                                ("Agile Level I and Level II" section (:members 
+                                  ( ("Agile Level I and Level II" anchor nil nil [24344 24347]))                                  ) nil [24327 24525]))                              ) nil [23977 24525])
+                            ("Agile Level I and Level II" section (:members 
+                              ( ("Syntel" section (:members 
+                                  ( ("Syntel" anchor nil nil [24605 24608]))                                  ) nil [24579 24873]))                              ) nil [24525 24873]))                          ) nil [21971 24873])
+                        ("Honors &amp; Awards" section (:members 
+                          ( ("Syntel Values Award - SMART Category" section (:members 
+                              ( ("Syntel" section nil nil [25009 25732]))                              ) nil [24945 25732])
+                            ("Syntel Values Award - SMART Category" section (:members 
+                              ( ("Syntel" section nil nil [25796 25977]))                              ) nil [25732 25977])
+                            ("SPOT Recognition" section (:members 
+                              ( ("Syntel" section nil nil [26021 26439]))                              ) nil [25977 26439])
+                            ("SPOT Recognition" section (:members 
+                              ( ("Syntel" section nil nil [26483 26883]))                              ) nil [26439 26883])
+                            ("SPOT Recognition" section (:members 
+                              ( ("Syntel" section nil nil [26927 27381]))                              ) nil [26883 27381]))                          ) nil [24873 27381])
+                        ("Skills" section (:members 
+                          ( ("Sales" anchor nil nil [27538 27541])
+                            ("Marketing Communications" anchor nil nil [27675 27678])
+                            ("People Management" anchor nil nil [27869 27872])
+                            ("Lead Generation" anchor nil nil [28042 28045])
+                            ("New Business Development" anchor nil nil [28209 28212])
+                            ("Competitive Analysis" anchor nil nil [28403 28406])
+                            ("Business Strategy" anchor nil nil [28585 28588])
+                            ("Account Management" anchor nil nil [28758 28761])
+                            ("Sales Presentation Skills" anchor nil nil [28934 28937])
+                            ("Pre-sales" anchor nil nil [29131 29134])
+                            ("Pre-Sales Initiatives" anchor nil nil [29280 29283])
+                            ("RFI" anchor nil nil [29465 29468])
+                            ("RFP Design" anchor nil nil [29596 29599])
+                            ("Visio" anchor nil nil [29748 29751])
+                            ("Selling" anchor nil nil [29885 29888])
+                            ("Marketing" anchor nil nil [30138 30141])
+                            ("Management" anchor nil nil [30293 30296])
+                            ("Team Leadership" anchor nil nil [30451 30454])
+                            ("Business Development" anchor nil nil [30624 30627])
+                            ("CRM" anchor nil nil [30812 30815])
+                            ("Strategy" anchor nil nil [30949 30952])
+                            ("Market Research" anchor nil nil [31101 31104])
+                            ("Online Marketing" anchor nil nil [31274 31277])
+                            ("Negotiation" anchor nil nil [31450 31453])
+                            ("Analysis" anchor nil nil [31611 31614])
+                            ("Cloud Computing" anchor nil nil [31763 31766])
+                            ("Business Intelligence" anchor nil nil [31936 31939])
+                            ("Key Account Management" anchor nil nil [32127 32130])
+                            ("Outsourcing" anchor nil nil [32321 32324])
+                            ("Business Analysis" anchor nil nil [32482 32485]))                          ) nil [27381 32844])
+                        ("Education" section (:members 
+                          ( ("Indian Institute of Planning &amp; Management, New Delhi" section (:members 
+                              ( ("Indian Institute of Planning &amp; Management, New Delhi" anchor nil nil [32946 32949])
+                                ("MBA, Marketing &amp; Finance" section nil nil [33124 33317]))                              ) nil [32923 33317])
+                            ("Jagannath International Management School" section (:members 
+                              ( ("BIT, Information Technology" section nil nil [33386 33578]))                              ) nil [33317 33578])
+                            ("Colonel&#39;s Central Academy" section (:members 
+                              ( ("SSC &amp; HSC, Commerce" section nil nil [33635 33884]))                              ) nil [33578 33884]))                          ) nil [32844 33884])
+                        ("Interests" section (:members 
+                          ( ("Claims management" anchor nil nil [34050 34053])
+                            ("Cloud Computing" anchor nil nil [34292 34295])
+                            ("BI/DW" anchor nil nil [34523 34526])
+                            ("EAI" anchor nil nil [34666 34669])
+                            ("Testing" anchor nil nil [35041 35044])
+                            ("Policy Admin" anchor nil nil [35188 35191])
+                            ("Guidewire" anchor nil nil [35350 35353]))                          ) nil [33884 35582])
+                        ("Recommendations" section nil nil [35582 37429])
+                        ("Groups" section (:members 
+                          ( ("Insurance Industry Executives" section (:members 
+                              ( ("Insurance Industry Executives" anchor nil nil [37589 37592]))                              ) nil [37572 37809])
+                            ("Insurance Industry Executives" section (:members 
+                              ( ("Insurance Industry Executives" anchor nil nil [37832 37835])
+                                ("Leadership Think Tank" section (:members 
+                                  ( ("Leadership Think Tank" anchor nil nil [37998 38001]))                                  ) nil [37981 38209]))                              ) nil [37809 38209])
+                            ("Leadership Think Tank" section (:members 
+                              ( ("Leadership Think Tank" anchor nil nil [38232 38235])
+                                ("FastTrack Business Network (LION / Q&amp;A)" section (:members 
+                                  ( ("FastTrack Business Network (LION / Q&amp;A)" anchor nil nil [38389 38392]))                                  ) nil [38372 38622]))                              ) nil [38209 38622])
+                            ("FastTrack Business Network (LION / Q&amp;A)" section (:members 
+                              ( ("FastTrack Business Network (LION / Q&amp;A)" anchor nil nil [38645 38648])
+                                ("RFP (Request For Proposal) PROFESSIONALS" section (:members 
+                                  ( ("RFP (Request For Proposal) PROFESSIONALS" anchor nil nil [38824 38827]))                                  ) nil [38807 39056]))                              ) nil [38622 39056])
+                            ("RFP (Request For Proposal) PROFESSIONALS" section (:members 
+                              ( ("RFP (Request For Proposal) PROFESSIONALS" anchor nil nil [39079 39082])
+                                ("Top Connected Facebook- ONA" section (:members 
+                                  ( ("Top Connected Facebook- ONA" anchor nil nil [39257 39260]))                                  ) nil [39240 39476]))                              ) nil [39056 39476])
+                            ("Top Connected Facebook- ONA" section (:members 
+                              ( ("Top Connected Facebook- ONA" anchor nil nil [39499 39502])
+                                ("ACT (Insurance Agents Council for Technology)" section (:members 
+                                  ( ("ACT (Insurance Agents Council for Technology)" anchor nil nil [39664 39667]))                                  ) nil [39647 39948]))                              ) nil [39476 39948])
+                            ("ACT (Insurance Agents Council for Technology)" section (:members 
+                              ( ("ACT (Insurance Agents Council for Technology)" anchor nil nil [39971 39974])
+                                ("Global HR Forum" section (:members 
+                                  ( ("Global HR Forum" anchor nil nil [40154 40157]))                                  ) nil [40137 40361]))                              ) nil [39948 40361])
+                            ("Global HR Forum" section (:members 
+                              ( ("Global HR Forum" anchor nil nil [40384 40387])
+                                ("ORACLE CONNECTIONS" section (:members 
+                                  ( ("ORACLE CONNECTIONS" anchor nil nil [40717 40720]))                                  ) nil [40700 40925]))                              ) nil [40361 40925])
+                            ("ORACLE CONNECTIONS" section (:members 
+                              ( ("ORACLE CONNECTIONS" anchor nil nil [40948 40951])
+                                ("Lead Generation and Nurturing" section (:members 
+                                  ( ("Lead Generation and Nurturing" anchor nil nil [41108 41111]))                                  ) nil [41091 41327]))                              ) nil [40925 41327])
+                            ("Lead Generation and Nurturing" section (:members 
+                              ( ("Lead Generation and Nurturing" anchor nil nil [41350 41353])
+                                ("Duck Creek Professionals" section (:members 
+                                  ( ("Duck Creek Professionals" anchor nil nil [41521 41524]))                                  ) nil [41504 41737]))                              ) nil [41327 41737])
+                            ("Duck Creek Professionals" section (:members 
+                              ( ("Duck Creek Professionals" anchor nil nil [41760 41763])
+                                ("Top Connected Open Networkers - ONA" section (:members 
+                                  ( ("Top Connected Open Networkers - ONA" anchor nil nil [41928 41931]))                                  ) nil [41911 42155]))                              ) nil [41737 42155])
+                            ("Top Connected Open Networkers - ONA" section (:members 
+                              ( ("Top Connected Open Networkers - ONA" anchor nil nil [42178 42181])
+                                ("Job Connection &amp; Career Network for Serious Job Seekers by TheJobGenius.com" section (:members 
+                                  ( ("Job Connection &amp; Career Network for Serious Job Seekers by TheJobGenius.com" anchor nil nil [42357 42360]))                                  ) nil [42340 42629]))                              ) nil [42155 42629])
+                            ("Job Connection &amp; Career Network for Serious Job Seekers by TheJobGenius.com" section (:members 
+                              ( ("Job Connection &amp; Career Network for Serious Job Seekers by TheJobGenius.com" anchor nil nil [42652 42655])
+                                ("Wisdom &amp; Leadership Group" section (:members 
+                                  ( ("Wisdom &amp; Leadership Group" anchor nil nil [42875 42878]))                                  ) nil [42858 43096]))                              ) nil [42629 43096])
+                            ("Wisdom &amp; Leadership Group" section (:members 
+                              ( ("Wisdom &amp; Leadership Group" anchor nil nil [43119 43122])
+                                ("Insurance Professionals" section (:members 
+                                  ( ("Insurance Professionals" anchor nil nil [43292 43295]))                                  ) nil [43275 43505]))                              ) nil [43096 43505])
+                            ("Insurance Professionals" section (:members 
+                              ( ("Insurance Professionals" anchor nil nil [43528 43531]))                              ) nil [43505 43932]))                          ) nil [37429 43932])
+                        ("Find a different Amit Agrawal" section (:members 
+                          ( ("Amit Agrawal" anchor nil nil [44440 44443])
+                            ("Amit Agrawal" anchor nil nil [44551 44554])
+                            ("Amit Agrawal" section (:members 
+                              ( ("Amit Agrawal" anchor nil nil [44814 44817])
+                                ("Amit Agrawal" anchor nil nil [44967 44970]))                              ) nil [44810 45274])
+                            ("Amit Agrawal" section (:members 
+                              ( ("Amit Agrawal" anchor nil nil [45278 45281])
+                                ("Amit Agrawal" anchor nil nil [45560 45563]))                              ) nil [45274 45864])
+                            ("Amit Agrawal" section (:members 
+                              ( ("Amit Agrawal" anchor nil nil [45868 45871])
+                                ("Amit Agrawal" anchor nil nil [46062 46065]))                              ) nil [45864 46321])
+                            ("Amit Agrawal" section (:members 
+                              ( ("Amit Agrawal" anchor nil nil [46325 46328])
+                                ("Amit Agrawal" anchor nil nil [46546 46549]))                              ) nil [46321 46820])
+                            ("Amit Agrawal" section (:members 
+                              ( ("Amit Agrawal" anchor nil nil [46824 46827]))                              ) nil [46820 47230]))                          ) nil [43932 47230])
+                        ("People Also Viewed" section (:members 
+                          ( ("Sandeep Nangrani" anchor nil nil [47300 47303])
+                            ("Sandeep Nangrani" section (:members 
+                              ( ("Sandeep Nangrani" anchor nil nil [47571 47574])
+                                ("Beena Chauhan Ghatikar" anchor nil nil [47756 47759]))                              ) nil [47548 48027])
+                            ("Beena Chauhan Ghatikar" section (:members 
+                              ( ("Beena Chauhan Ghatikar" anchor nil nil [48050 48053])
+                                ("Aditi Pathak , ALMI" anchor nil nil [48265 48268]))                              ) nil [48027 48508])
+                            ("Aditi Pathak , ALMI" section (:members 
+                              ( ("Aditi Pathak , ALMI" anchor nil nil [48531 48534])
+                                ("Rohit Saksena" anchor nil nil [48718 48721]))                              ) nil [48508 48963])
+                            ("Rohit Saksena" section (:members 
+                              ( ("Rohit Saksena" anchor nil nil [48986 48989])
+                                ("Makarand Sawant" anchor nil nil [49180 49183]))                              ) nil [48963 49437])
+                            ("Makarand Sawant" section (:members 
+                              ( ("Makarand Sawant" anchor nil nil [49460 49463])
+                                ("Sourabh Singh" anchor nil nil [49666 49669]))                              ) nil [49437 49968])
+                            ("Sourabh Singh" section (:members 
+                              ( ("Sourabh Singh" anchor nil nil [49991 49994])
+                                ("Vinita Vinchoo" anchor nil nil [50158 50161]))                              ) nil [49968 50461])
+                            ("Vinita Vinchoo" section (:members 
+                              ( ("Vinita Vinchoo" anchor nil nil [50484 50487])
+                                ("Payal Kolvekar" anchor nil nil [50696 50699]))                              ) nil [50461 50999])
+                            ("Payal Kolvekar" section (:members 
+                              ( ("Payal Kolvekar" anchor nil nil [51022 51025])
+                                ("Manoj Badhan" anchor nil nil [51206 51209]))                              ) nil [50999 51460])
+                            ("Manoj Badhan" section (:members 
+                              ( ("Manoj Badhan" anchor nil nil [51483 51486])
+                                ("Hansraaj , AINS,ITIL,PRINCE2" anchor nil nil [51677 51680]))                              ) nil [51460 51953])
+                            ("Hansraaj , AINS,ITIL,PRINCE2" section (:members 
+                              ( ("Hansraaj , AINS,ITIL,PRINCE2" anchor nil nil [51976 51979]))                              ) nil [51953 52433]))                          ) nil [47230 52433]))                      ) nil [9861 52433]))                  ) nil [8160 52433]))              ) nil [7230 52433])
+            ("window.addEventListener('load',function(){var iframes=document.getElementsByTagName(\"iframe\");for(var i=0;i<iframes.length;i++){var iframe=iframes[i],src=iframe.getAttribute('data-src');if(src){iframe.src=src;}}});" section (:members 
+              ( ("LinkedIn members in India:" section (:members 
+                  ( ("a" anchor nil nil [52793 52796])
+                    ("b" anchor nil nil [52861 52864])
+                    ("c" anchor nil nil [52929 52932])
+                    ("d" anchor nil nil [52997 53000])
+                    ("e" anchor nil nil [53065 53068])
+                    ("f" anchor nil nil [53133 53136])
+                    ("g" anchor nil nil [53201 53204])
+                    ("h" anchor nil nil [53269 53272])
+                    ("i" anchor nil nil [53337 53340])
+                    ("j" anchor nil nil [53405 53408])
+                    ("k" anchor nil nil [53473 53476])
+                    ("l" anchor nil nil [53541 53544])
+                    ("m" anchor nil nil [53609 53612])
+                    ("n" anchor nil nil [53677 53680])
+                    ("o" anchor nil nil [53745 53748])
+                    ("p" anchor nil nil [53813 53816])
+                    ("q" anchor nil nil [53881 53884])
+                    ("r" anchor nil nil [53949 53952])
+                    ("s" anchor nil nil [54017 54020])
+                    ("t" anchor nil nil [54085 54088])
+                    ("u" anchor nil nil [54153 54156])
+                    ("v" anchor nil nil [54221 54224])
+                    ("w" anchor nil nil [54289 54292])
+                    ("x" anchor nil nil [54357 54360])
+                    ("y" anchor nil nil [54425 54428])
+                    ("z" anchor nil nil [54493 54496])
+                    ("more" anchor nil nil [54561 54564])
+                    ("by country" anchor nil nil [54670 54673]))                  ) nil [52711 54762]))              ) nil [52433 54762])
+            ("(function(){var DOMAIN_NAME=window.location.hostname.replace(/.*\\.([^\\.]+\\.[^\\.]+)/,'$1'),DOMAIN_NAME_PROD='linkedin.com';function getRemoteFrameUrl(){return('https:'===document.location.protocol?'https://':'http://')+'platform.'+DOMAIN_NAME+'/js/thirdPartyJSDelegatorFrame.html';}function loadExternalTracking(){var thirdPartyJs=new Espany({remote:getRemoteFrameUrl(),ready:function(){if(DOMAIN_NAME!==DOMAIN_NAME_PROD){return;}thirdPartyJs.loadScript('analyticsjs').result(function(msg){thirdPartyJs.run('ga',['create','UA-62256447-1',{'cookieDomain':DOMAIN_NAME_PROD}]);thirdPartyJs.run('ga',['set','referrer',document.referrer]);thirdPartyJs.run('ga',['set','location',window.location.href]);thirdPartyJs.run('ga',['send','pageview',{page:'public_profile_v3_desktop'}]);});}});}window.addEventListener('load',loadExternalTracking);})();" section nil nil [54762 55648])
+            ("LinkedIn Corporation" section nil nil [55648 55742])
+            ("LinkedIn Corporation" section (:members 
+              ( ("User Agreement" anchor nil nil [56428 56431])
+                ("Privacy Policy" anchor nil nil [56544 56547])
+                ("Community Guidelines" anchor nil nil [56658 56661])
+                ("Cookie Policy" anchor nil nil [56774 56777])
+                ("Copyright Policy" anchor nil nil [56888 56891])
+                ("Unsubscribe" anchor nil nil [57006 57009]))              ) nil [55742 57127])
+            ("(function(n,r,a){r=window[n]=window[n]||{};a=r['WebTracking']=r['WebTracking']||{};a['URLs']={'saveWebActionTrackURL':'\\/lite\\/secure-web-action-track?csrfToken=ajax%3A1027213533869909083'};}('__li__config_registry__'));" section nil nil [57127 57392])
+            ("(function(n,r,a){r=window[n]=window[n]||{};r['global_bsp_notice_type']='warning';r['global_bsp_notice_autoHide']='false';r['global_bsp_view_threshold']='c5';}('__li__lix_registry__'));" section nil nil [57392 57618])
+            ("(function(n,r,a){r=window[n]=window[n]||{};r['global_browser_unsupported_notice']='Looks like you\\'re using a browser that\\'s not supported. <a target=\\\"_blank\\\" href=\\\"https:\\/\\/linkedin.com\\/help\\/linkedin\\/answer\\/4135?lang=en\\\">Learn more about browsers you can use.<\\/a>';}('__li__i18n_registry__'));" section nil nil [57618 57966])
+            ("(function(n,r,a){r=window[n]=window[n]||{};a=r['global:browserSupportPolicy']=r['global:browserSupportPolicy']||{};a['supportedBrowserMinVersions']={ie:'v10',firefox:'v38',opera:'control',safari:'v6.1',chrome:'v42',mobileSafari:'v7',android:'v2.3',androidChrome:'v0'};}('__li__config_registry__'));" section nil nil [57966 58309])
+            ("There&#39;s more to see..." section (:members 
+              ( ("There&#39;s more to see..." section nil nil [59085 59429])
+                ("There&#39;s more to see..." section nil nil [59429 59687]))              ) nil [58309 59687])
+            ("if(!window.LI){window.LI={};}
+LI.RUM=LI.RUM||{};(function(RUM,win){var doc=win.document;RUM.flags=RUM.flags||{};RUM.flags['host-flag']=\"control\";RUM.flags['pop_beacons_frequency']=\"n100-ap0-la0-va0-tx0-sg0-db0-hk0-sp0-ln0-ch0-sy0-mu0\";RUM.flags['rs_timings_individual']=\"n1000\";RUM.flags['rs_timings_individual_detail']=\"control\";RUM.urls=RUM.urls||{};RUM.urls['rum-track']=\"\\/lite\\/rum-track?csrfToken=ajax%3A1027213533869909083\";RUM.urls['boomerang-bw-img']=\"https:\\/\\/static.licdn.com\\/scds\\/common\\/u\\/lib\\/boomerang\\/0.9.edge.4ab208445a\\/img\\/\";RUM.base_urls=RUM.base_urls||{};RUM.base_urls['permanent_content']=\"https:\\/\\/static.licdn.com\\/scds\\/common\\/u\\/\";RUM.base_urls['versioned_content']=\"https:\\/\\/static.licdn.com\\/scds\\/concat\\/common\\/\";RUM.base_urls['media_proxy']=\"https:\\/\\/media.licdn.com\\/media-proxy\\/\";RUM.serverStartTime=1.460481590859E12;RUM.enabled=true;function getRumScript(){var node=doc.body||doc.head||doc.getElementsByTagName('head')[0],script=doc.createElement('script');script.src=[\"https://static.licdn.com/scds/concat/common/js?h=ed29nkjpsa16bhrjq4na16owq-1mucgfycc664m7vmhpjgqse65-1l5rurej3h44qodo5rn0cdvyn-8om6v2ckrxsbnwf40t9ta8a7e-34tiets5jpj294jd59h8c4s0n-28w7d5j2k2jtil9ncckolke4m-9jzlwicvu376y9q4vjq77y5ks-1m0whdrwis44c1hoa9mrwhlt4-1uvutm1mpyov7rqhtcf8fksby-aac54ic1fmca5xz1yvc5t9nfe-1hn40w0bomeivihj9lopp4hp2-c0121povror81d0xao0yez4gy\"][0];node.appendChild(script);}
+if(win.addEventListener){win.addEventListener('load',getRumScript);}
+else{win.attachEvent('onload',getRumScript);}}(LI.RUM,window));" section nil nil [59687 61342])
+            ("var fetchCS=!true,isSecure=true;(function(fetchCS,isSecure,_e,_r){var isNielsenDisabled=true;var fireComscore=function(){var _c=window.COMSCORE;if(_c){_c.beacon({c1:2,c2:6402952,c3:\"\",c4:\"\",c5:\"\",c6:\"\",c15:\"\"});}};var uc=window.encodeURIComponent,timeStamp=(new Date()).getTime();var fireExternalTracking=function(et){et.setTreatment('enabled_1.0');et.trackWithComScoreForChromeInit(isNielsenDisabled);if(typeof et.trackPageChromeInit!==\"function\"&&!isNielsenDisabled){var img=new Image(1,1);img.onerror=img.onload=function(){img.onerror=img.onload=null;};img.src=[\"//secure-gl.imrworldwide.com/cgi-bin/m?ci=au-linkedin&cc=1&si=\",uc(window.location.href),\"&rp=\",uc(document.referrer),\"&ts=compact&rnd=\",timeStamp].join('');}};var track=function(){var et;if(_e){fireExternalTracking(_e);}else if(_r&&typeof _r.ensure==='function'){try{_r.ensure(['externalTracking'],function(require){try{et=require('externalTracking');fireExternalTracking(et);}catch(e){fireComscore();}});}catch(e){fireComscore();}}else if(_r&&_r._is_li){try{et=require('externalTracking');fireExternalTracking(et);}catch(e){fireComscore();}}else{fireComscore();}};var loadCS=function(onScriptLoad){var s=document.createElement('script');if(s.readyState){s.onreadystatechange=function(){if(s.readyState==='loaded'){onScriptLoad();}};}else{s.onload=onScriptLoad;}
+s.src=(isSecure?'https://sb':'http://b')+'.scorecardresearch.com/beacon.js';document.getElementsByTagName('head')[0].appendChild(s);};if(fetchCS){window.addEventListener('load',function(){loadCS(track);});}else{window.addEventListener('load',track);}}(fetchCS,isSecure,window.externalTracking,window.require));" section nil nil [61342 61453])
+            ("var fetchCS=!true,isSecure=true;(function(fetchCS,isSecure,_e,_r){var isNielsenDisabled=true;var fireComscore=function(){var _c=window.COMSCORE;if(_c){_c.beacon({c1:2,c2:6402952,c3:\"\",c4:\"\",c5:\"\",c6:\"\",c15:\"\"});}};var uc=window.encodeURIComponent,timeStamp=(new Date()).getTime();var fireExternalTracking=function(et){et.setTreatment('enabled_1.0');et.trackWithComScoreForChromeInit(isNielsenDisabled);if(typeof et.trackPageChromeInit!==\"function\"&&!isNielsenDisabled){var img=new Image(1,1);img.onerror=img.onload=function(){img.onerror=img.onload=null;};img.src=[\"//secure-gl.imrworldwide.com/cgi-bin/m?ci=au-linkedin&cc=1&si=\",uc(window.location.href),\"&rp=\",uc(document.referrer),\"&ts=compact&rnd=\",timeStamp].join('');}};var track=function(){var et;if(_e){fireExternalTracking(_e);}else if(_r&&typeof _r.ensure==='function'){try{_r.ensure(['externalTracking'],function(require){try{et=require('externalTracking');fireExternalTracking(et);}catch(e){fireComscore();}});}catch(e){fireComscore();}}else if(_r&&_r._is_li){try{et=require('externalTracking');fireExternalTracking(et);}catch(e){fireComscore();}}else{fireComscore();}};var loadCS=function(onScriptLoad){var s=document.createElement('script');if(s.readyState){s.onreadystatechange=function(){if(s.readyState==='loaded'){onScriptLoad();}};}else{s.onload=onScriptLoad;}
+s.src=(isSecure?'https://sb':'http://b')+'.scorecardresearch.com/beacon.js';document.getElementsByTagName('head')[0].appendChild(s);};if(fetchCS){window.addEventListener('load',function(){loadCS(track);});}else{window.addEventListener('load',track);}}(fetchCS,isSecure,window.externalTracking,window.require));" section nil nil [61453 63338])
+            ("(function(d){function go(){var a=d.createElement('iframe');a.style.display='none';a.setAttribute('sandbox','allow-scripts allow-same-origin');a.src='//radar.cedexis.com/1/11326/radar/radar.html';if(d.body){d.body.appendChild(a);}}
+if(window.addEventListener){window.addEventListener('load',go,false);}else if(window.addEvent){window.addEvent('onload',go);}}(document));" section nil nil [63338 63771]))          
+      :file "amitagrawal1982"
+      :pointmax 63771
+      :fsize 63921
+      :lastmodtime '(22285 11831 513359 534000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!useless!ayyo!output!backup2!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

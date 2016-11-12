@@ -1,0 +1,187 @@
+;; Object aaaa_imp_backup_files/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aaaa_imp_backup_files/"
+  :tables
+  (list
+    (semanticdb-table "CRMSearchUtil.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("crm.search.service.util" package nil nil [1 33])
+            ("java.util.ArrayList" include nil nil [35 62])
+            ("java.util.HashMap" include nil nil [63 88])
+            ("java.util.HashSet" include nil nil [89 114])
+            ("java.util.List" include nil nil [115 137])
+            ("java.util.Map" include nil nil [138 159])
+            ("java.util.Set" include nil nil [160 181])
+            ("java.util.TreeSet" include nil nil [182 207])
+            ("javax.ws.rs.NotFoundException" include nil nil [209 246])
+            ("javax.ws.rs.client.Client" include nil nil [247 280])
+            ("javax.ws.rs.client.ClientBuilder" include nil nil [281 321])
+            ("javax.ws.rs.core.GenericType" include nil nil [322 358])
+            ("javax.ws.rs.core.Response" include nil nil [359 392])
+            ("org.apache.commons.lang3.StringUtils" include nil nil [394 438])
+            ("org.apache.commons.lang3.math.NumberUtils" include nil nil [439 488])
+            ("org.apache.http.NameValuePair" include nil nil [489 526])
+            ("org.apache.http.message.BasicNameValuePair" include nil nil [527 577])
+            ("org.glassfish.jersey.client.ClientConfig" include nil nil [578 626])
+            ("org.glassfish.jersey.jackson.JacksonFeature" include nil nil [627 678])
+            ("com.fasterxml.jackson.datatype.jsr310.JavaTimeModule" include nil nil [680 740])
+            ("com.google.common.base.Splitter" include nil nil [741 780])
+            ("com.google.gson.Gson" include nil nil [781 809])
+            ("spire.commons.Context" include nil nil [811 840])
+            ("spire.commons.config.SpireConfigManager" include nil nil [841 888])
+            ("spire.commons.config.exception.PropertyNotFoundException" include nil nil [889 953])
+            ("spire.commons.logger.Key" include nil nil [954 986])
+            ("spire.commons.logger.Logger" include nil nil [987 1022])
+            ("spire.commons.logger.LoggerFactory" include nil nil [1023 1065])
+            ("spire.commons.search.response.Bucket" include nil nil [1066 1110])
+            ("spire.commons.search.response.AbstractResponse" include nil nil [1111 1165])
+            ("spire.commons.search.response.Group" include nil nil [1166 1209])
+            ("spire.commons.utils.ContextUtil" include nil nil [1210 1249])
+            ("spire.match.SearchAndMatchService" include nil nil [1250 1291])
+            ("spire.match.entities.AttributeTypeEnum" include nil nil [1292 1338])
+            ("spire.match.entities.CandidateExt" include nil nil [1339 1380])
+            ("spire.match.entities.CloudSkill" include nil nil [1381 1420])
+            ("spire.match.entities.EnhancedQuery" include nil nil [1421 1463])
+            ("spire.match.entities.CloudSkill.CloudType" include nil nil [1464 1513])
+            ("spire.match.entities.SearchFacets.SupportedAggregations" include nil nil [1514 1577])
+            ("spire.match.entities.Paging" include nil nil [1578 1613])
+            ("spire.match.entities.SearchConfig" include nil nil [1614 1655])
+            ("spire.match.entities.SearchFacets" include nil nil [1656 1697])
+            ("spire.match.entities.Skill" include nil nil [1698 1732])
+            ("spire.match.entities.SkillConfig" include nil nil [1733 1773])
+            ("spire.match.entities.Skill.SkillType" include nil nil [1774 1818])
+            ("spire.talent.entity.demandservice.beans.ReqLocationMapBean" include nil nil [1819 1885])
+            ("spire.talent.entity.demandservice.beans.ReqSkillMapBean" include nil nil [1886 1949])
+            ("spire.talent.entity.demandservice.beans.RequisitionBean" include nil nil [1950 2013])
+            ("crm.search.service.query.CRMSearchQuery" include nil nil [2014 2061])
+            ("crm.search.exceptions.SearchCoreRestClientException" include nil nil [2062 2121])
+            ("crm.search.service.beans.CRMQueryParameterEnum" include nil nil [2122 2176])
+            ("crm.search.service.beans.CategoryEnum" include nil nil [2177 2222])
+            ("crm.search.service.beans.LabelDetails" include nil nil [2223 2268])
+            ("crm.search.service.beans.SearchInput" include nil nil [2269 2313])
+            ("CRMSearchUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2349 2425])
+                    ("validateCRMQueryParameters" function
+                       (:throws ("Exception")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [2495 2501])
+                            ("" variable (:type "crmQueryParameterMap") (reparse-symbol formal_parameters) [2517 2537]))                          
+                        :type "CRMSearchQuery")
+                        (reparse-symbol class_member_declaration) [2435 5104])
+                    ("customizeResponse" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("candidateResponseList" variable (:type "AbstractResponse") (reparse-symbol formal_parameters) [5159 5197]))                          
+                        :type "AbstractResponse")
+                        (reparse-symbol class_member_declaration) [5110 7198])
+                    ("getSearchConfig" function
+                       (:throws ("SearchCoreRestClientException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [7245 7260]))                          
+                        :type "SearchConfig")
+                        (reparse-symbol class_member_declaration) [7202 8428])
+                    ("getPaginationInfo" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("offsetStr" variable (:type "String") (reparse-symbol formal_parameters) [8471 8487])
+                            ("limitStr" variable (:type "String") (reparse-symbol formal_parameters) [8489 8504]))                          
+                        :type "Paging")
+                        (reparse-symbol class_member_declaration) [8432 8905])
+                    ("createSkillsConfigForSkillCloud" function
+                       (:throws ("SearchCoreRestClientException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "skills") (reparse-symbol formal_parameters) [8980 8986]))                          
+                        :type "SkillConfig")
+                        (reparse-symbol class_member_declaration) [8909 10413])
+                    ("parseSkillsForSkillCloud" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "skills") (reparse-symbol formal_parameters) [10481 10487]))                          )
+                        (reparse-symbol class_member_declaration) [10443 11111])
+                    ("getAttributesWeight" function
+                       (:constructor-flag t
+                        :throws ("SearchCoreRestClientException")
+                        :arguments 
+                          ( ("" variable (:type "searchFields") (reparse-symbol formal_parameters) [11191 11203]))                          )
+                        (reparse-symbol class_member_declaration) [11159 13080])
+                    ("getAttributesWeight" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "AttributeTypeEnum") (reparse-symbol formal_parameters) [13152 13169])
+                            ("" variable (:type "attributesWeight") (reparse-symbol formal_parameters) [13178 13194])
+                            ("" variable (:type "searchFields") (reparse-symbol formal_parameters) [13208 13220]))                          )
+                        (reparse-symbol class_member_declaration) [13128 15809])
+                    ("getNormalizedWeight" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("totalWeight" variable (:type "float") (reparse-symbol formal_parameters) [15877 15894])
+                            ("" variable (:type "AttributeTypeEnum") (reparse-symbol formal_parameters) [15899 15916])
+                            ("" variable (:type "fieldMap") (reparse-symbol formal_parameters) [15924 15932]))                          )
+                        (reparse-symbol class_member_declaration) [15857 16373])
+                    ("getCloudSkillTypesWeight" function
+                       (:constructor-flag t
+                        :throws ("SearchCoreRestClientException"))
+                        (reparse-symbol class_member_declaration) [16413 17993])
+                    ("getSkillTypesWeight" function (:constructor-flag t) (reparse-symbol class_member_declaration) [18033 18225])
+                    ("resolveESIndexName" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("context" variable (:type "Context") (reparse-symbol formal_parameters) [18269 18284]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [18229 18567])
+                    ("getRequsitionDetails" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("requisitionId" variable (:type "String") (reparse-symbol formal_parameters) [18618 18638]))                          
+                        :type "SearchInput")
+                        (reparse-symbol class_member_declaration) [18571 28871])
+                    ("isSearchAttributesInvolvedInRiCalculation" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "searchFieldsSet") (reparse-symbol formal_parameters) [28951 28966]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [28875 29247])
+                    ("getTypeAheadLabelNames" function
+                       (:constructor-flag t
+                        :throws ("SearchCoreRestClientException")
+                        :arguments 
+                          ( ("labelName" variable (:type "String") (reparse-symbol formal_parameters) [29307 29323]))                          )
+                        (reparse-symbol class_member_declaration) [29284 31153])
+                    ("enhanceSearchInput" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [31194 31217]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [31156 31480])
+                    ("updateSeachInput" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [31520 31543])
+                            ("attribute" variable (:type "String") (reparse-symbol formal_parameters) [31545 31561])
+                            ("" variable (:type "attributeVals") (reparse-symbol formal_parameters) [31575 31588]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [31483 32379])
+                    ("csvToSet" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("csvString" variable (:type "String") (reparse-symbol formal_parameters) [32419 32435]))                          )
+                        (reparse-symbol class_member_declaration) [32409 32653]))                  
+                :type "class")
+                nil [2315 32658]))          
+      :file "CRMSearchUtil.java"
+      :pointmax 32660
+      :fsize 32659
+      :lastmodtime '(22399 33935 151616 0)
+      :unmatched-syntax '((GT 32407 . 32408) (PUBLIC 32383 . 32389) (LT 32400 . 32401) (GT 31573 . 31574) (IDENTIFIER 31563 . 31566) (LT 31566 . 31567) (GT 29282 . 29283) (PUBLIC 29251 . 29257) (LT 29269 . 29270) (GT 28949 . 28950) (IDENTIFIER 28939 . 28942) (LT 28942 . 28943) (GT 18031 . 18032) (COMMA 18024 . 18025) (PUBLIC 17997 . 18003) (LT 18014 . 18015) (GT 16411 . 16412) (COMMA 16404 . 16405) (PUBLIC 16377 . 16383) (LT 16394 . 16395) (IDENTIFIER 15917 . 15922) (GT 15922 . 15923) (IDENTIFIER 15895 . 15898) (LT 15898 . 15899) (GT 15855 . 15856) (COMMA 15848 . 15849) (PUBLIC 15813 . 15819) (LT 15830 . 15831) (GT 13206 . 13207) (IDENTIFIER 13195 . 13199) (LT 13199 . 13200) (IDENTIFIER 13171 . 13176) (GT 13176 . 13177) (IDENTIFIER 13148 . 13151) (LT 13151 . 13152) (GT 13126 . 13127) (COMMA 13119 . 13120) (PUBLIC 13084 . 13090) (LT 13101 . 13102) (GT 11189 . 11190) (IDENTIFIER 11179 . 11182) (LT 11182 . 11183) (GT 11157 . 11158) (COMMA 11150 . 11151) (PUBLIC 11115 . 11121) (LT 11132 . 11133) (GT 10479 . 10480) (IDENTIFIER 10468 . 10472) (LT 10472 . 10473) (GT 10441 . 10442) (PUBLIC 10417 . 10423) (LT 10435 . 10436) (GT 8978 . 8979) (IDENTIFIER 8967 . 8971) (LT 8971 . 8972) (RSHIFT 2514 . 2516) (IDENTIFIER 2503 . 2507) (LT 2507 . 2508) (IDENTIFIER 2491 . 2494) (LT 2494 . 2495))))
+  :file "!home!karthic!aaaa_imp_backup_files!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object html/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "html/"
+  :tables
+  (list
+    (semanticdb-table "amitagrawal1982_new"
+      :major-mode 'html-mode
+      :tags nil
+      :file "amitagrawal1982_new"
+      :pointmax 65981
+      :fsize 66135
+      :lastmodtime '(22341 58912 166133 179000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!useless!ayyo!new!html!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

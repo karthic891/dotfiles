@@ -1,0 +1,11 @@
+*
+*~
+!.gitignore
+!.gitconfig
+!.emacs
+!.emacs.d/
+!.emacs.d/**
+.emacs.d/*~
+.emacs.d/**~
+.emacs.d/session*
+!xecute/

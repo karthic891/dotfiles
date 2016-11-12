@@ -1,0 +1,19 @@
+;; Object activitystream/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "activitystream/"
+  :tables (list 
+   (semanticdb-table "Actor.java"
+    :major-mode 'jdee-mode
+    :tags 
+        '( ("spire.commons.activitystream" package nil nil [1 38]))          
+    :file "Actor.java"
+    :pointmax 1767
+    :fsize 1766
+    :lastmodtime '(22006 44521 657167 154000)
+    :unmatched-syntax '((BRACE_BLOCK 146 . 1766) (GT 144 . 145) (IDENTIFIER 143 . 144) (PUBLIC 124 . 130) (LT 142 . 143))
+    )
+   )
+  :file "!home!vkarthic!spirework!java!activity-stream-service!activity-stream!src!main!java!spire!commons!activitystream!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2"
+  )
