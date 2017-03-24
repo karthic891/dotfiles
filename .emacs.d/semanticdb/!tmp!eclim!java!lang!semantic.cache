@@ -1,0 +1,81 @@
+;; Object lang/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lang/"
+  :tables
+  (list
+    (semanticdb-table "RuntimeException.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.lang" package nil nil [218 236])
+            ("RuntimeException" type
+               (:typemodifiers ("public")
+                :superclasses "Exception"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [879 938])
+                    ("RuntimeException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [1150 1200])
+                    ("RuntimeException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1583 1597]))                          )
+                        (reparse-symbol class_member_declaration) [1559 1630])
+                    ("RuntimeException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [2332 2346])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [2348 2363]))                          )
+                        (reparse-symbol class_member_declaration) [2308 2403])
+                    ("RuntimeException" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [3062 3077]))                          )
+                        (reparse-symbol class_member_declaration) [3038 3108])
+                    ("RuntimeException" function
+                       (:constructor-flag t
+                        :typemodifiers ("protected")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [3771 3785])
+                            ("cause" variable (:type "Throwable") (reparse-symbol formal_parameters) [3787 3802])
+                            ("enableSuppression" variable (:type "boolean") (reparse-symbol formal_parameters) [3835 3860])
+                            ("writableStackTrace" variable (:type "boolean") (reparse-symbol formal_parameters) [3893 3919]))                          )
+                        (reparse-symbol class_member_declaration) [3744 3998]))                  
+                :type "class")
+                nil [825 4000]))          
+      :file "RuntimeException.java"
+      :pointmax 4001
+      :fsize 4001
+      :lastmodtime '(22578 55119 180980 82000)
+      :unmatched-syntax nil)
+    (semanticdb-table "String.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.lang" package nil nil [218 236])
+            ("java.io.ObjectStreamField" include nil nil [238 271])
+            ("java.io.UnsupportedEncodingException" include nil nil [272 316])
+            ("java.nio.charset.Charset" include nil nil [317 349])
+            ("java.util.ArrayList" include nil nil [350 377])
+            ("java.util.Arrays" include nil nil [378 402])
+            ("java.util.Comparator" include nil nil [403 431])
+            ("java.util.Formatter" include nil nil [432 459])
+            ("java.util.Locale" include nil nil [460 484])
+            ("java.util.Objects" include nil nil [485 510])
+            ("java.util.StringJoiner" include nil nil [511 541])
+            ("java.util.regex.Matcher" include nil nil [542 573])
+            ("java.util.regex.Pattern" include nil nil [574 605])
+            ("java.util.regex.PatternSyntaxException" include nil nil [606 652]))          
+      :file "String.java"
+      :pointmax 124312
+      :fsize 124311
+      :lastmodtime '(22578 55319 464471 169000)
+      :unmatched-syntax '((BRACE_BLOCK 3695 . 124311) (IDENTIFIER 3682 . 3694) (COMMA 3680 . 3681) (GT 3679 . 3680) (IDENTIFIER 3673 . 3679) (PUBLIC 3599 . 3605) (LT 3672 . 3673))))
+  :file "!tmp!eclim!java!lang!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

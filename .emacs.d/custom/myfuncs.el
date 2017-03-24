@@ -3,8 +3,14 @@
 ;; Open Tomcat catalina.out file in one of the buffers
 (defun open-tomcat-logs()
   (interactive)
-  (find-file "~/serverstuff/apache-tomcat-8.0.23/logs/catalina.out")
+  (find-file-other-frame "~/serverstuff/apache-tomcat-8.0.23/logs/catalina.out")
   (message "Opening ~/serverstuff/apache-tomcat-8.0.23/logs/catalina.out")
+  )
+
+(defun clear-tomcat-logs ()
+  "Clear tomcat log i.e., catalina.out"
+  (interactive)
+  (write-region "" nil "~/serverstuff/apache-tomcat-8.0.23/logs/catalina.out")
   )
 
 ;;erase-buffer, specially when you want to clear the shell prompt
@@ -105,7 +111,6 @@
     (show-smartparens-mode 0)))
 
 (add-hook 'auto-revert-tail-mode-hook 'etc-log-tail-handler)
-
 
 (defun get-files-in-directory()
   (interactive)

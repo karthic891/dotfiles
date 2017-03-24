@@ -1,0 +1,9 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+)
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!config!core!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

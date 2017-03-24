@@ -8,12 +8,86 @@
 (load "myconf")
 ;; (load "myfonts") Disabling myfonts to use themes - An Upgrade, lol
 
+;; Learn a word a day!
+(load "word-of-the-day")
+
 (add-to-list 'load-path "~/.emacs.d/plugins/sr-speedbar")
 (require 'sr-speedbar)
 
 (add-to-list 'load-path "~/.emacs.d/plugins/edit-server")
 (require 'edit-server)
 (edit-server-start)
+
+(defun log4j-mode-hook-impl ()
+  "For use in log4j-mode"
+  (local-set-key (kbd "<C-up>") 'log4j-backward-record)
+  (local-set-key (kbd "<C-down>") 'log4j-forward-record)
+  (read-only-mode t)
+  )
+
+(defun adsf ()
+  "don't know yet"
+  (interactive)
+  (write-region "hel" nil "/home/karthic/cat.out")
+  )
+
+
+;; Log4j mode - Enable efficient reading of logs
+(autoload 'log4j-mode "log4j-mode" "Major mode for viewing log files." t)
+(add-to-list 'auto-mode-alist '("\\.log\\'" . log4j-mode))
+(add-to-list 'auto-mode-alist '("\\.out\\'" . log4j-mode))
+(add-hook 'log4j-mode-hook 'log4j-mode-hook-impl)
+
+
+;; Emacs-eclipse
+(add-to-list 'load-path "~/.emacs.d/elpa/eclim-20161019.838/")
+(package-initialize)
+;; http://emacs.stackexchange.com/questions/2595/problem-of-loading-a-package-at-emacs-startup
+;; See first answer
+(require 'eclim)
+(global-eclim-mode)
+
+;; If you want to control eclimd from emacs, also add:
+(require 'eclimd)
+
+(setq eclimd-default-workspace "~/spirework/java")
+
+;; Eclim java outline just like eclipse
+;; Bound to C-c , j by default
+(add-hook 'java-mode-hook 'semantic-mode)
+
+;; Disable auto-save in eclim
+;; (setq eclim-auto-save nil)
+
+(add-to-list 'eclim--file-coding-system-mapping '("iso-latin-1-unix" . "iso-8859-1"))
+
+;; Eclipse installation
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(eclim-eclipse-dirs (quote ("~/serverstuff/eclipse")))
+ '(eclim-executable "~/serverstuff/eclipse/eclim"))
+
+;; Displaying compilation error messages in the echo area
+(setq help-at-pt-display-when-idle t)
+(setq help-at-pt-timer-delay 0.1)
+(help-at-pt-set-timer)
+
+;; regular auto-complete initialization
+(require 'auto-complete-config)
+(ac-config-default)
+
+;; add the emacs-eclim source
+(require 'ac-emacs-eclim)
+(ac-emacs-eclim-config)
+
+;; Configuring company-mode
+(require 'company)
+(require 'company-emacs-eclim)
+(company-emacs-eclim-setup)
+(global-company-mode t)
 
 ;; (add-to-list 'load-path "~/.emacs.d/elpa/pdf-tools-20160525.920")
 ;; (require 'pdf-tools)
@@ -35,8 +109,9 @@
 (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
 
 ;; automagically tail log and out files
-(add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
-(add-to-list 'auto-mode-alist '("\\.out\\'" . auto-revert-tail-mode))
+;; Replaced by log4j-mode
+;; (add-to-list 'auto-mode-alist '("\\.log\\'" . auto-revert-tail-mode))
+;; (add-to-list 'auto-mode-alist '("\\.out\\'" . auto-revert-tail-mode))
 
 ;; make the fringe stand out from the background
 ;; (setq solarized-distinct-fringe-background t)
@@ -58,8 +133,8 @@
 ;; (jdee-abbrev-mode)
 
 ;; For JDEE - A Java Development Environment
-(add-to-list 'load-path "~/.emacs.d/plugins/jdee-2.4.1/lisp")
-(load "jde")
+;; (add-to-list 'load-path "~/.emacs.d/plugins/jdee-2.4.1/lisp")
+;; (load "jde")
 
 ;; third time jdee - Got zip from github
 ;; (add-to-list 'load-path "/home/karthic/.emacs.d/plugins/jdee-master")
@@ -84,21 +159,10 @@
 
 ;; (require 'jdee)
 
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(jde-jdk (quote ("1.8")))
- '(jde-jdk-registry (quote (("1.8_1" . "/usr/lib/jvm/java-8-oracle") ("1.8" . "/usr/lib/jvm/java-8-oracle"))))
- '(jdee-enable-abbrev-mode t)
- '(jdee-jdk-registry (quote (("1.8" . "/usr/lib/jvm/java-8-oracle"))))
- '(jdee-server-dir "/home/karthic/.emacs.d/plugins/jdee-master-dependency-jars"))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-

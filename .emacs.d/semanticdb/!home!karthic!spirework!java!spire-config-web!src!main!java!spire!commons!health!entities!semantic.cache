@@ -1,0 +1,106 @@
+;; Object entities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "entities/"
+  :tables
+  (list
+    (semanticdb-table "Result.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.health.entities" package nil nil [1 39])
+            ("Result" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("nodeIP" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [149 171])
+                    ("nodeName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [173 197])
+                    ("service" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [199 222])
+                    ("statusCode" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [224 250])
+                    ("status" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [252 274])
+                    ("notes" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [276 297])
+                    ("getNodeIP" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [333 380])
+                    ("setNodeIP" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nodeIP" variable (:type "String") (reparse-symbol formal_parameters) [450 463]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [428 493])
+                    ("getNodeName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [531 582])
+                    ("setNodeName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("nodeName" variable (:type "String") (reparse-symbol formal_parameters) [659 674]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [635 708])
+                    ("getService" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [745 794])
+                    ("setService" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("service" variable (:type "String") (reparse-symbol formal_parameters) [868 882]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [845 914])
+                    ("getStatusCode" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [954 1009])
+                    ("setStatusCode" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("statusCode" variable (:type "String") (reparse-symbol formal_parameters) [1092 1109]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1066 1147])
+                    ("getStatus" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1183 1230])
+                    ("setStatus" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("status" variable (:type "String") (reparse-symbol formal_parameters) [1301 1314]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1279 1344])
+                    ("getNotes" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1379 1424])
+                    ("setNotes" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("notes" variable (:type "String") (reparse-symbol formal_parameters) [1492 1504]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1471 1532]))                  
+                :type "class")
+                nil [125 1536]))          
+      :file "Result.java"
+      :pointmax 1537
+      :fsize 1536
+      :lastmodtime '(22609 30588 588547 172000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!health!entities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

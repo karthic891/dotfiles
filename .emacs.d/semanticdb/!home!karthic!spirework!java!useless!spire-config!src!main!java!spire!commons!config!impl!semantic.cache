@@ -1,0 +1,515 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "ArchaiusConfigurationManager.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.impl" package nil nil [1 35])
+            ("java.io.IOException" include nil nil [102 129])
+            ("java.io.InputStream" include nil nil [130 157])
+            ("java.net.Inet4Address" include nil nil [158 187])
+            ("java.net.Inet6Address" include nil nil [188 217])
+            ("java.net.InetAddress" include nil nil [218 246])
+            ("java.net.NetworkInterface" include nil nil [247 280])
+            ("java.net.Socket" include nil nil [281 304])
+            ("java.util.ArrayList" include nil nil [305 332])
+            ("java.util.Collection" include nil nil [333 361])
+            ("java.util.Enumeration" include nil nil [362 391])
+            ("java.util.Properties" include nil nil [392 420])
+            ("javax.net.ssl.SSLSocketFactory" include nil nil [422 460])
+            ("javax.sql.DataSource" include nil nil [461 489])
+            ("spire.commons.Context" include nil nil [491 520])
+            ("spire.commons.config.ConfigSource" include nil nil [521 562])
+            ("spire.commons.config.LogKey" include nil nil [563 598])
+            ("spire.commons.config.exception.PropertyNotFoundException" include nil nil [599 663])
+            ("spire.commons.logger.Key" include nil nil [664 696])
+            ("spire.commons.logger.Logger" include nil nil [697 732])
+            ("spire.commons.logger.LoggerFactory" include nil nil [733 775])
+            ("spire.commons.logger.annotations.Loggable" include nil nil [776 825])
+            ("spire.commons.samples.SimpleKeyValueLog" include nil nil [826 873])
+            ("spire.commons.utils.ContextUtil" include nil nil [874 913])
+            ("com.mysql.jdbc.jdbc2.optional.MysqlDataSource" include nil nil [915 968])
+            ("com.netflix.config.ConfigurationManager" include nil nil [969 1016])
+            ("com.netflix.config.DynamicBooleanProperty" include nil nil [1017 1066])
+            ("com.netflix.config.DynamicConfiguration" include nil nil [1067 1114])
+            ("com.netflix.config.DynamicDoubleProperty" include nil nil [1115 1163])
+            ("com.netflix.config.DynamicFloatProperty" include nil nil [1164 1211])
+            ("com.netflix.config.DynamicIntProperty" include nil nil [1212 1257])
+            ("com.netflix.config.DynamicLongProperty" include nil nil [1258 1304])
+            ("com.netflix.config.DynamicPropertyFactory" include nil nil [1305 1354])
+            ("com.netflix.config.DynamicStringProperty" include nil nil [1355 1403])
+            ("com.netflix.config.FixedDelayPollingScheduler" include nil nil [1404 1457])
+            ("com.netflix.config.PolledConfigurationSource" include nil nil [1458 1510])
+            ("com.netflix.config.sources.JDBCConfigurationSource" include nil nil [1511 1569])
+            ("ArchaiusConfigurationManager" type
+               (:typemodifiers ("public")
+                :interfaces ("DynamicConfigurationManager")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [2063 2141])
+                    ("CONFIG_KEY" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2147 2180])
+                    ("CONFIG_VALUE" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2185 2220])
+                    ("FIELD_SEPARATOR" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2225 2263])
+                    ("FIELD_ALL" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2268 2300])
+                    ("CONFIG_TABLE_NAME" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2305 2345])
+                    ("APPLICATION_CONFIG_QUERY" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2350 2397])
+                    ("DB_URL" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2402 2431])
+                    ("DB_USER" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2436 2466])
+                    ("DB_PWD" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2471 2500])
+                    ("INITIAL_DELAY" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2505 2538])
+                    ("DELAY" variable
+                       (:typemodifiers ("private" "static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [2543 2568])
+                    ("DEFAULT_GATEWAY_IP" variable
+                       (:typemodifiers ("private" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2573 2614])
+                    ("node" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [2672 2692])
+                    ("initConfigurationEnvironment" function
+                       (:throws ("IllegalArgumentException" "IllegalStateException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [2872 2890])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [2892 2917]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2831 4970])
+                    ("loadProperties" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("configFileName" variable (:type "String") (reparse-symbol formal_parameters) [5025 5046]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4990 7039])
+                    ("getNodeInfo2" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [7049 8278])
+                    ("getNodeInfo" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [8284 9105])
+                    ("isValidConfigSource" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [9147 9172]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [9111 9338])
+                    ("initConfigurationEnvironment" function
+                       (:throws ("IllegalStateException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [9492 9510]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9451 9606])
+                    ("addConfigurationListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("spireConfigListener" variable (:type "DynamicConfigurationListener") (reparse-symbol formal_parameters) [9663 9711]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [9626 9852])
+                    ("getStringProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [9994 10005])
+                            ("defaultValue" variable (:type "String") (reparse-symbol formal_parameters) [10007 10026]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [9962 11150])
+                    ("getStringProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [11398 11409]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [11366 11783])
+                    ("getLongProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [11917 11928])
+                            ("defaultValue" variable (:type "long") (reparse-symbol formal_parameters) [11930 11947]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [11889 12867])
+                    ("getLongProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [13107 13118]))                          
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [13079 13420])
+                    ("getBooleanProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [13566 13577])
+                            ("defaultValue" variable (:type "boolean") (reparse-symbol formal_parameters) [13579 13599]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [13532 14564])
+                    ("getBooleanProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [14816 14827]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [14782 15272])
+                    ("getIntProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [15402 15413])
+                            ("defaultValue" variable (:type "int") (reparse-symbol formal_parameters) [15415 15431]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [15376 16380])
+                    ("getIntProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16426 16437]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [16400 16739])
+                    ("getFloatProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [16877 16888])
+                            ("defaultValue" variable (:type "float") (reparse-symbol formal_parameters) [16890 16908]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [16847 17861])
+                    ("getFloatProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [18105 18116]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [18075 18412])
+                    ("getDoubleProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [18554 18565])
+                            ("defaultValue" variable (:type "double") (reparse-symbol formal_parameters) [18567 18586]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [18522 19545])
+                    ("getDoubleProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [19793 19804]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [19761 20114])
+                    ("constructPropertyKey" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("key" variable (:type "String") (reparse-symbol formal_parameters) [20395 20405])
+                            ("exclude" variable (:type "EXCLUDE") (reparse-symbol formal_parameters) [20407 20422])
+                            ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [20424 20442])
+                            ("tenantName" variable (:type "String") (reparse-symbol formal_parameters) [20444 20461]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [20359 21578])
+                    ("installConfigSource" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [21784 21802])
+                            ("dataSource" variable (:type "DataSource") (reparse-symbol formal_parameters) [21804 21825]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21751 22340])
+                    ("getDataSource" function
+                       (:typemodifiers ("private")
+                        :type "DataSource")
+                        (reparse-symbol class_member_declaration) [22360 22603])
+                    ("getTenantName" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [22609 23016])
+                    ("getServiceName" function
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [23022 23451]))                  
+                :type "class")
+                nil [1975 23458]))          
+      :file "ArchaiusConfigurationManager.java"
+      :pointmax 23459
+      :fsize 23458
+      :lastmodtime '(22558 60636 750455 202000)
+      :unmatched-syntax '((SEMICOLON 2810 . 2811) (PAREN_BLOCK 2808 . 2810) (GT 2807 . 2808) (LT 2778 . 2779) (NEW 2765 . 2768) (EQ 2763 . 2764) (GT 2745 . 2746) (PRIVATE 2698 . 2705) (LT 2716 . 2717) (MULT 98 . 99) (DOT 97 . 98) (IDENTIFIER 77 . 97) (DOT 76 . 77) (IDENTIFIER 72 . 76) (DOT 71 . 72) (IDENTIFIER 65 . 71) (DOT 64 . 65) (IDENTIFIER 57 . 64) (DOT 56 . 57) (IMPORT 37 . 43) (STATIC 44 . 50) (IDENTIFIER 51 . 56)))
+    (semanticdb-table "DynamicConfigurationManager.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.impl" package nil nil [1 35])
+            ("spire.commons.config.ConfigSource" include nil nil [37 78])
+            ("spire.commons.config.exception.PropertyNotFoundException" include nil nil [79 143])
+            ("DynamicConfigurationManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("initConfigurationEnvironment" function
+                       (:throws ("IllegalArgumentException" "IllegalStateException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [1180 1198]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1139 1255])
+                    ("initConfigurationEnvironment" function
+                       (:throws ("IllegalArgumentException" "IllegalStateException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [1731 1749])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [1751 1776]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1690 1833])
+                    ("addConfigurationListener" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dynamicConfigListener" variable (:type "DynamicConfigurationListener") (reparse-symbol formal_parameters) [2117 2167]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2080 2169])
+                    ("getStringProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2436 2447])
+                            ("defaultValue" variable (:type "String") (reparse-symbol formal_parameters) [2449 2468]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [2404 2470])
+                    ("getStringProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [2730 2741]))                          
+                        :type "String")
+                        (reparse-symbol interface_member_declaration) [2698 2776])
+                    ("getLongProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [3152 3163])
+                            ("defaultValue" variable (:type "long") (reparse-symbol formal_parameters) [3165 3182]))                          
+                        :type "long")
+                        (reparse-symbol interface_member_declaration) [3124 3184])
+                    ("getLongProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [3553 3564]))                          
+                        :type "long")
+                        (reparse-symbol interface_member_declaration) [3525 3599])
+                    ("getBooleanProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [3869 3880])
+                            ("defaultValue" variable (:type "boolean") (reparse-symbol formal_parameters) [3882 3902]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [3835 3904])
+                    ("getBooleanProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [4168 4179]))                          
+                        :type "boolean")
+                        (reparse-symbol interface_member_declaration) [4134 4214])
+                    ("getIntProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [4574 4585])
+                            ("defaultValue" variable (:type "int") (reparse-symbol formal_parameters) [4587 4603]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [4548 4605])
+                    ("getIntProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [4958 4969]))                          
+                        :type "int")
+                        (reparse-symbol interface_member_declaration) [4932 5004])
+                    ("getFloatProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [5376 5387])
+                            ("defaultValue" variable (:type "float") (reparse-symbol formal_parameters) [5389 5407]))                          
+                        :type "float")
+                        (reparse-symbol interface_member_declaration) [5346 5409])
+                    ("getFloatProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [5774 5785]))                          
+                        :type "float")
+                        (reparse-symbol interface_member_declaration) [5744 5820])
+                    ("getDoubleProperty" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [6212 6223])
+                            ("defaultValue" variable (:type "double") (reparse-symbol formal_parameters) [6225 6244]))                          
+                        :type "double")
+                        (reparse-symbol interface_member_declaration) [6180 6246])
+                    ("getDoubleProperty" function
+                       (:throws ("PropertyNotFoundException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("name" variable (:type "String") (reparse-symbol formal_parameters) [6631 6642]))                          
+                        :type "double")
+                        (reparse-symbol interface_member_declaration) [6599 6677]))                  
+                :type "interface")
+                nil [423 6679]))          
+      :file "DynamicConfigurationManager.java"
+      :pointmax 6680
+      :fsize 6679
+      :lastmodtime '(22284 59089 891082 629000)
+      :unmatched-syntax '((IDENTIFIER 691 . 695) (BRACE_BLOCK 704 . 749)))
+    (semanticdb-table "DynamicConfigurationEvent.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.impl" package nil nil [1 35])
+            ("DynamicConfigurationEvent" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("propertyName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [294 322])
+                    ("propertyValue" variable
+                       (:typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [366 395])
+                    ("beforeUpdate" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [476 505])
+                    ("DynamicConfigurationEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("propertyName" variable (:type "String") (reparse-symbol formal_parameters) [541 560])
+                            ("propertyValue" variable (:type "Object") (reparse-symbol formal_parameters) [562 582])
+                            ("beforeUpdate" variable (:type "boolean") (reparse-symbol formal_parameters) [584 604]))                          )
+                        (reparse-symbol class_member_declaration) [508 720])
+                    ("getPropertyName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [763 822])
+                    ("setPropertyName" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("propertyName" variable (:type "String") (reparse-symbol formal_parameters) [910 929]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [882 971])
+                    ("getPropertyValue" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [1013 1074])
+                    ("setPropertyValue" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("propertyValue" variable (:type "Object") (reparse-symbol formal_parameters) [1165 1185]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1136 1229])
+                    ("isBeforeUpdate" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1270 1329])
+                    ("setBeforeUpdate" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("beforeUpdate" variable (:type "boolean") (reparse-symbol formal_parameters) [1417 1437]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1389 1479]))                  
+                :type "class")
+                nil [212 1481]))          
+      :file "DynamicConfigurationEvent.java"
+      :pointmax 1482
+      :fsize 1481
+      :lastmodtime '(22284 58754 95088 643000)
+      :unmatched-syntax nil)
+    (semanticdb-table "DynamicConfigurationListener.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.impl" package nil nil [1 35])
+            ("DynamicConfigurationListener" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("configurationChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("spireConfigEvent" variable (:type "DynamicConfigurationEvent") (reparse-symbol formal_parameters) [536 578]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [503 580]))                  
+                :type "interface")
+                nil [358 582]))          
+      :file "DynamicConfigurationListener.java"
+      :pointmax 583
+      :fsize 582
+      :lastmodtime '(22584 15567 693031 606000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SpireUniversalConfigurationListener.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.impl" package nil nil [1 35])
+            ("java.util.Collection" include nil nil [37 65])
+            ("org.apache.commons.configuration.event.ConfigurationEvent" include nil nil [67 132])
+            ("org.apache.commons.configuration.event.ConfigurationListener" include nil nil [133 201])
+            ("SpireUniversalConfigurationListener" type
+               (:typemodifiers ("public")
+                :interfaces ("ConfigurationListener")
+                :members 
+                  ( ("SpireUniversalConfigurationListener" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "configListeners") (reparse-symbol formal_parameters) [950 965]))                          )
+                        (reparse-symbol class_member_declaration) [866 1013])
+                    ("configurationChanged" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("configEvent" variable (:type "ConfigurationEvent") (reparse-symbol formal_parameters) [1247 1277]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1214 1540])
+                    ("createConfigEvent" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("configEvent" variable (:type "ConfigurationEvent") (reparse-symbol formal_parameters) [1749 1779]))                          
+                        :type "DynamicConfigurationEvent")
+                        (reparse-symbol class_member_declaration) [1697 1976])
+                    ("getPropertyName" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("fullyQualifiedName" variable (:type "String") (reparse-symbol formal_parameters) [2011 2036]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1980 2220]))                  
+                :type "class")
+                nil [514 2222]))          
+      :file "SpireUniversalConfigurationListener.java"
+      :pointmax 2223
+      :fsize 2222
+      :lastmodtime '(22584 11121 602412 320000)
+      :unmatched-syntax '((GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671) (GT 948 . 949) (IDENTIFIER 909 . 919) (LT 919 . 920) (SEMICOLON 716 . 717) (GT 699 . 700) (PRIVATE 652 . 659) (LT 670 . 671))))
+  :file "!home!karthic!spirework!java!useless!spire-config!src!main!java!spire!commons!config!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

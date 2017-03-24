@@ -1,0 +1,42 @@
+;; Object jersey/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "jersey/"
+  :tables
+  (list
+    (semanticdb-table "Message.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.atmosphere.samples.chat.jersey" package nil nil [593 636])
+            ("javax.xml.bind.annotation.XmlRootElement" include nil nil [638 686])
+            ("Message" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("author" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [731 757])
+                    ("message" variable
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [762 789])
+                    ("Message" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [795 818])
+                    ("Message" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("author" variable (:type "String") (reparse-symbol formal_parameters) [839 852])
+                            ("message" variable (:type "String") (reparse-symbol formal_parameters) [854 868]))                          )
+                        (reparse-symbol class_member_declaration) [824 939]))                  
+                :type "class")
+                nil [704 941]))          
+      :file "Message.java"
+      :pointmax 942
+      :fsize 941
+      :lastmodtime '(22166 30235 669587 936000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!IWantToDie!src!main!java!org!atmosphere!samples!chat!jersey!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

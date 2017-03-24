@@ -1,0 +1,70 @@
+;; Object event/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "event/"
+  :tables
+  (list
+    (semanticdb-table "ConfigurationEvent.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("org.apache.commons.configuration.event" package nil nil [803 850])
+            ("java.util.EventObject" include nil nil [852 881])
+            ("ConfigurationEvent" type
+               (:typemodifiers ("public")
+                :superclasses "EventObject"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [3580 3646])
+                    ("type" variable
+                       (:typemodifiers ("private")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [3686 3703])
+                    ("propertyName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [3746 3774])
+                    ("propertyValue" variable
+                       (:typemodifiers ("private")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [3818 3847])
+                    ("beforeUpdate" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3895 3924])
+                    ("ConfigurationEvent" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("source" variable (:type "Object") (reparse-symbol formal_parameters) [4314 4327])
+                            ("type" variable (:type "int") (reparse-symbol formal_parameters) [4329 4337])
+                            ("propertyName" variable (:type "String") (reparse-symbol formal_parameters) [4339 4358])
+                            ("propertyValue" variable (:type "Object") (reparse-symbol formal_parameters) [4372 4392])
+                            ("beforeUpdate" variable (:type "boolean") (reparse-symbol formal_parameters) [4394 4414]))                          )
+                        (reparse-symbol class_member_declaration) [4288 4604])
+                    ("getPropertyName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4800 4872])
+                    ("getPropertyValue" function
+                       (:typemodifiers ("public")
+                        :type "Object")
+                        (reparse-symbol class_member_declaration) [5026 5100])
+                    ("getType" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5265 5318])
+                    ("isBeforeUpdate" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [5527 5599]))                  
+                :type "class")
+                nil [3475 5601]))          
+      :file "ConfigurationEvent.java"
+      :pointmax 5602
+      :fsize 5760
+      :lastmodtime '(22584 14631 926305 822000)
+      :unmatched-syntax nil))
+  :file "!tmp!eclim!org!apache!commons!configuration!event!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

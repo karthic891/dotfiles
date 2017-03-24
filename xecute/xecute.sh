@@ -55,6 +55,9 @@ then
 	# Exit after the first pid as that's usually the actual pid to be killed
 	exit 1
     done
+elif [[ $program = 'start-redis' ]]
+then
+    command=$command"redis-server"
 else
     command=$command$program
 fi

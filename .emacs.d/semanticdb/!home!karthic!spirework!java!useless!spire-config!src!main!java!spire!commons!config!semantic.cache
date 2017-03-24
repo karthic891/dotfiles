@@ -1,0 +1,76 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables
+  (list
+    (semanticdb-table "SpireConfigManager.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config" package nil nil [1 30])
+            ("spire.commons.Context" include nil nil [33 62])
+            ("spire.commons.config.exception.SpireConfigurationException" include nil nil [63 129])
+            ("spire.commons.config.impl.ArchaiusConfigurationManager" include nil nil [130 192])
+            ("spire.commons.config.impl.DynamicConfigurationManager" include nil nil [193 254])
+            ("spire.commons.logger.Key" include nil nil [255 287])
+            ("spire.commons.logger.Logger" include nil nil [288 323])
+            ("spire.commons.logger.LoggerFactory" include nil nil [324 366])
+            ("spire.commons.samples.SimpleKeyValueLog" include nil nil [367 414])
+            ("spire.commons.utils.ContextUtil" include nil nil [415 454])
+            ("SpireConfigManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("logger" variable
+                       (:typemodifiers ("final" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [767 846])
+                    ("_instance" variable
+                       (:typemodifiers ("private" "static")
+                        :type "DynamicConfigurationManager")
+                        (reparse-symbol class_member_declaration) [883 936])
+                    ("isInitialized" variable
+                       (:typemodifiers ("private" "volatile" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1009 1063])
+                    ("setup" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [1337 1355])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [1357 1382]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1312 1493])
+                    ("getInstance" function
+                       (:typemodifiers ("public" "static")
+                        :type "DynamicConfigurationManager")
+                        (reparse-symbol class_member_declaration) [1755 2116])
+                    ("init" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [2249 2274]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2224 3044])
+                    ("initConfigManager" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [3218 3236])
+                            ("configSource" variable (:type "ConfigSource") (reparse-symbol formal_parameters) [3238 3263]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [3180 3781]))                  
+                :type "class")
+                nil [731 3785]))          
+      :file "SpireConfigManager.java"
+      :pointmax 3786
+      :fsize 3785
+      :lastmodtime '(22584 16099 742069 805000)
+      :unmatched-syntax nil)
+    (semanticdb-table "ConfigSource.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config" package nil nil [13 42]))          
+      :file "ConfigSource.java"
+      :pointmax 632
+      :fsize 631
+      :lastmodtime '(22284 58754 75088 643000)
+      :unmatched-syntax '((BRACE_BLOCK 228 . 631) (GT 226 . 227) (IDENTIFIER 225 . 226) (PUBLIC 199 . 205) (LT 224 . 225))))
+  :file "!home!karthic!spirework!java!useless!spire-config!src!main!java!spire!commons!config!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

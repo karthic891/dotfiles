@@ -1,0 +1,30 @@
+;; Object health/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "health/"
+  :tables
+  (list
+    (semanticdb-table "Test.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.health" package nil nil [1 30])
+            ("Test" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [70 83]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [46 113]))                  
+                :type "class")
+                nil [32 115]))          
+      :file "Test.java"
+      :pointmax 134
+      :fsize 133
+      :lastmodtime '(22609 83 680358 446000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!health!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

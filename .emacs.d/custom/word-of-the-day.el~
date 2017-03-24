@@ -1,0 +1,74 @@
+
+;; Learn a word a day!
+(add-to-list 'load-path "~/.emacs.d/plugins/request.el/")
+(require 'request)
+(require 'url)
+(require 'json)
+(defun word-of-the-day ()
+  (interactive)
+  (request
+   "http://api.wordnik.com/v4/words.json/wordOfTheDay"
+   :params '(("api_key" . "9b431a720395c7dc988cf02622a0e7a7ce5f2f3c22c8ad291"))
+   :parser 'buffer-string
+   :success (function*
+             (lambda (&key data &allow-other-keys)
+                (when data
+                (with-current-buffer (get-buffer-create "*scratch*")
+                  ;; (erase-buffer)
+		  (let ((json-object-type 'alist))
+		    (let ((response-json (json-read-from-string data)))
+		      (message "asdf %s "response-json)
+		      (setq word (cdr (assq 'word response-json)))
+		      (message "word %s" word)
+		      (setq word-note (cdr (assq 'note response-json)))
+		      (message "word-note %s" word-note)
+		      (let ((word-definition (assq 'definitions response-json)))
+			;; (message "%s" word-definition)
+			;; (setq mm (json-read-from-string word-definition))
+			(message "goneee... %s" word-definition)
+			)
+		      ;; (message "gogo- %S" response-json)
+		      (insert ";; Word of the day!\n")
+		      (insert ";; Word: " word "\n")
+		      (insert ";; Note: " word-note "\n")
+		      ;; (insert ";; Defintions: " word-definition)
+		      ))
+                  (pop-to-buffer (current-buffer))))))
+   :error
+   (function* (lambda (&key error-thrown &allow-other-keys&rest _)
+                (message "Got error: %S" error-thrown)))
+   ))
+
+;; (defun word-of-the-day ()
+;;   (interactive)
+;;   (request
+;;    "http://api.wordnik.com/v4/words.json/wordOfTheDay"
+;;    :params '(("api_key" . "9b431a720395c7dc988cf02622a0e7a7ce5f2f3c22c8ad291w"))
+;;    :parser 'buffer-string
+;;    :success (function*
+;;              (lambda (&key data &allow-other-keys)
+;; 	       (erase-buffer)
+;; 	       (when data
+;; 		 (with-current-buffer (get-buffer-create "*scratch*")
+;; 		   (erase-buffer)
+;; 		   (insert "bored")
+;; 		   (let ((json-object-type 'alist))
+;; 		     (let ((response-json (json-read-from-string data)))
+;; 		       (setq word (cdr (assq 'word response-json)))
+;; 		       (setq word-note (cdr (assq 'note response-json)))
+;; 		       (let ((word-definition (assq 'definitions response-json)))
+;; 			 ;; (message "%s" word-definition)
+;; 			 ;; (setq mm (json-read-from-string word-definition))
+;; 			 (message "goneee... %s" word-definition)
+;; 			 )
+;; 		       ;; (message "gogo- %S" response-json)
+;; 		       (insert ";; Word of the day!\n")
+;; 		       (insert ";; Word: " word "\n")
+;; 		       (insert ";; Note: " word-note "\n")
+;; 		       ;; (insert ";; Defintions: " word-definition)
+;; 		       ))
+;; 		   (pop-to-buffer (current-buffer))))))
+;;    :error
+;;    (function* (lambda (&key error-thrown &allow-other-keys&rest _)
+;;                 (message "Got error: %S" error-thrown)))
+;;    ))

@@ -1,0 +1,33 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "HealthCheck.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.health.core" package nil nil [1 35])
+            ("java.util.List" include nil nil [37 59])
+            ("spire.commons.health.entities.Result" include nil nil [61 105])
+            ("HealthCheck" type
+               (:typemodifiers ("public")
+                :type "interface")
+                nil [215 393]))          
+      :file "HealthCheck.java"
+      :pointmax 395
+      :fsize 394
+      :lastmodtime '(22609 31121 639004 730000)
+      :unmatched-syntax '((SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 423 . 424) (PAREN_BLOCK 421 . 423) (GT 414 . 415) (MINUS 382 . 383) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 423 . 424) (PAREN_BLOCK 421 . 423) (GT 414 . 415) (MINUS 382 . 383) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 390 . 391) (PAREN_BLOCK 388 . 390) (GT 381 . 382) (PUBLIC 363 . 369) (LT 374 . 375) (SEMICOLON 383 . 384) (PAREN_BLOCK 381 . 383) (PUBLIC 363 . 369) (LT 374 . 375)))
+
+    (semanticdb-table "Service.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.health.core" package nil nil [1 35]))          
+      :file "Service.java"
+      :pointmax 80
+      :fsize 79
+      :lastmodtime '(22609 32265 507278 181000)
+      :unmatched-syntax '((BRACE_BLOCK 57 . 79) (IDENTIFIER 49 . 56) (PUBLIC 37 . 43) (IDENTIFIER 44 . 48))))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!health!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

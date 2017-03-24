@@ -1,0 +1,6 @@
+# Ubuntu - Display Name In Top-Right Corner
+gsettings set com.canonical.indicator.session show-real-name-on-panel true
+
+# Linux - Tilda - A drop down terminal for Linux. Opens up a terminal on press of F1 key
+
+# Banshee music player provides support for integrating music from iPhone

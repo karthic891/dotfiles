@@ -1,0 +1,108 @@
+;; Object match/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "match/"
+  :tables
+  (list
+    (semanticdb-table "Main.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match" package nil nil [2 22])
+            ("java.util.HashMap" include nil nil [24 49])
+            ("java.util.HashSet" include nil nil [50 75])
+            ("Main" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [116 129]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [92 308])
+                    ("boring" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [311 376]))                  
+                :type "class")
+                nil [77 378]))          
+      :file "Main.java"
+      :pointmax 379
+      :fsize 378
+      :lastmodtime '(22578 44756 756570 190000)
+      :unmatched-syntax nil)
+    (semanticdb-table "NewTest.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match" package nil nil [1 21])
+            ("NewTest" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [72 85]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [48 109]))                  
+                :type "class")
+                nil [23 111]))          
+      :file "NewTest.java"
+      :pointmax 112
+      :fsize 111
+      :lastmodtime '(22578 44830 386054 412000)
+      :unmatched-syntax nil)
+    (semanticdb-table "SearchAndMatchService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match" package nil nil [186 206])
+            ("java.util.List" include nil nil [208 230])
+            ("java.util.Map" include nil nil [231 252])
+            ("java.util.Set" include nil nil [253 274])
+            ("spire.commons.search.query.SuggestQuery" include nil nil [276 323])
+            ("spire.match.entities.CandidateExt" include nil nil [324 365])
+            ("spire.match.entities.EnhancedQuery" include nil nil [366 408])
+            ("spire.match.entities.MatchResponse" include nil nil [409 451])
+            ("spire.match.entities.PassCriteria" include nil nil [452 493])
+            ("spire.match.entities.RiCriteria" include nil nil [494 533])
+            ("spire.match.entities.SearchClient" include nil nil [534 575])
+            ("spire.match.entities.SearchInput" include nil nil [576 616])
+            ("spire.match.entities.SearchResult" include nil nil [617 658])
+            ("spire.match.entities.SkillConfig" include nil nil [659 699])
+            ("spire.match.entities.exceptions.InvalidParameterException" include nil nil [700 765])
+            ("spire.match.entities.exceptions.SystemException" include nil nil [766 821])
+            ("SearchAndMatchService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("findPassCandidates" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "candidateList") (reparse-symbol formal_parameters) [1142 1155])
+                            ("passCriteria" variable (:type "PassCriteria") (reparse-symbol formal_parameters) [1157 1182]))                          
+                        :type "MatchResponse")
+                        (reparse-symbol interface_member_declaration) [1083 1184])
+                    ("calculateRi" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "candidateList") (reparse-symbol formal_parameters) [1421 1434])
+                            ("riCriteria" variable (:type "RiCriteria") (reparse-symbol formal_parameters) [1436 1457]))                          
+                        :type "MatchResponse")
+                        (reparse-symbol interface_member_declaration) [1369 1459])
+                    ("enhanceWithSkillCloud" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("configObj" variable (:type "SkillConfig") (reparse-symbol formal_parameters) [1671 1692]))                          
+                        :type "EnhancedQuery")
+                        (reparse-symbol interface_member_declaration) [1628 1694]))                  
+                :type "interface")
+                nil [855 2748]))          
+      :file "SearchAndMatchService.java"
+      :pointmax 2749
+      :fsize 2836
+      :lastmodtime '(22578 46154 682404 995000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!match!match!src!main!java!spire!match!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

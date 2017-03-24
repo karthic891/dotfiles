@@ -1,0 +1,81 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "ConfigurationService.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.core" package nil nil [1 35])
+            ("java.sql.SQLException" include nil nil [37 66])
+            ("java.util.List" include nil nil [67 89])
+            ("com.google.common.base.Throwables" include nil nil [91 132])
+            ("spire.commons.config.entities.CollectionEntity" include nil nil [134 188])
+            ("spire.commons.config.entities.SpireConfiguration" include nil nil [189 245])
+            ("spire.commons.config.exceptions.InvalidParameterException" include nil nil [246 311])
+            ("spire.commons.config.exceptions.SystemException" include nil nil [312 367])
+            ("ConfigurationService" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("deleteConfiguration" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [1591 1609])
+                            ("configId" variable (:type "String") (reparse-symbol formal_parameters) [1610 1625]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [1559 1677])
+                    ("updateConfiguration" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable (:type "SpireConfiguration") (reparse-symbol formal_parameters) [1890 1915]))                          
+                        :type "SpireConfiguration")
+                        (reparse-symbol interface_member_declaration) [1844 1967])
+                    ("addNewConfiguration" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("config" variable (:type "SpireConfiguration") (reparse-symbol formal_parameters) [2180 2205]))                          
+                        :type "SpireConfiguration")
+                        (reparse-symbol interface_member_declaration) [2134 2257])
+                    ("addNewService" function
+                       (:throws ("SystemException" "InvalidParameterException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [2414 2432]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [2388 2484])
+                    ("getConfiguration" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [2710 2728])
+                            ("id" variable (:type "String") (reparse-symbol formal_parameters) [2729 2738]))                          
+                        :type "SpireConfiguration")
+                        (reparse-symbol interface_member_declaration) [2667 2790])
+                    ("getConfigurationForTenant" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("tenant" variable (:type "String") (reparse-symbol formal_parameters) [3034 3047])
+                            ("id" variable (:type "String") (reparse-symbol formal_parameters) [3048 3057]))                          
+                        :type "SpireConfiguration")
+                        (reparse-symbol interface_member_declaration) [2982 3109])
+                    ("deleteService" function
+                       (:throws ("InvalidParameterException" "SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("serviceName" variable (:type "String") (reparse-symbol formal_parameters) [3268 3286]))                          
+                        :type "void")
+                        (reparse-symbol interface_member_declaration) [3242 3337]))                  
+                :type "interface")
+                nil [405 3341]))          
+      :file "ConfigurationService.java"
+      :pointmax 3342
+      :fsize 3341
+      :lastmodtime '(22350 42506 410938 258000)
+      :unmatched-syntax '((SEMICOLON 1421 . 1422) (COMMA 1404 . 1405) (THROWS 1372 . 1378) (PAREN_BLOCK 1354 . 1371) (GT 1330 . 1331) (LT 1311 . 1312) (SEMICOLON 1109 . 1110) (COMMA 1092 . 1093) (THROWS 1060 . 1066) (PAREN_BLOCK 989 . 1059) (GT 964 . 965) (LT 945 . 946) (SEMICOLON 683 . 684) (COMMA 666 . 667) (THROWS 634 . 640) (PAREN_BLOCK 631 . 633) (GT 615 . 616) (PUBLIC 585 . 591) (LT 608 . 609))))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!config!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

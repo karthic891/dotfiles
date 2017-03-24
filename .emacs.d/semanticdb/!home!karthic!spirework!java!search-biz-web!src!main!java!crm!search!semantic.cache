@@ -1,0 +1,17 @@
+;; Object search/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search/"
+  :tables
+  (list
+    (semanticdb-table "Main.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("Main" type (:type "class") nil [1 17]))          
+      :file "Main.java"
+      :pointmax 18
+      :fsize 17
+      :lastmodtime '(22578 48674 656791 416000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!search-biz-web!src!main!java!crm!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

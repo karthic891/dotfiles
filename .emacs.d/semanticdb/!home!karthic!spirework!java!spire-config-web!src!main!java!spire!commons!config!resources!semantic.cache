@@ -1,0 +1,79 @@
+;; Object resources/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "resources/"
+  :tables
+  (list
+    (semanticdb-table "ConfigurationResource.java"
+      :major-mode 'java-mode
+      :tags nil
+      :file "ConfigurationResource.java"
+      :pointmax 5088
+      :fsize 5087
+      :lastmodtime '(22609 32575 367805 430000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Service.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.resources" package nil nil [1 40])
+            ("java.util.ArrayList" include nil nil [42 69])
+            ("java.util.List" include nil nil [70 92])
+            ("javax.ws.rs.GET" include nil nil [94 117])
+            ("javax.ws.rs.Path" include nil nil [118 142])
+            ("javax.ws.rs.Produces" include nil nil [143 171])
+            ("javax.ws.rs.container.ResourceContext" include nil nil [172 217])
+            ("javax.ws.rs.core.Context" include nil nil [218 250])
+            ("javax.ws.rs.core.MediaType" include nil nil [251 285])
+            ("javax.ws.rs.core.UriInfo" include nil nil [286 318])
+            ("spire.commons.config.entities.CollectionEntity" include nil nil [320 374])
+            ("spire.commons.config.entities.Link" include nil nil [375 417])
+            ("spire.commons.config.entities.Version" include nil nil [418 463])
+            ("spire.commons.config.entities.Link.LinkType" include nil nil [464 515])
+            ("Service" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("VERSIONS_COUNT" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [590 634])
+                    ("getVersions" function (:constructor-flag t) (reparse-symbol class_member_declaration) [801 1393]))                  
+                :type "class")
+                nil [529 1643]))          
+      :file "Service.java"
+      :pointmax 1644
+      :fsize 1643
+      :lastmodtime '(22200 39961 307698 549000)
+      :unmatched-syntax '((RBRACE 1640 . 1641) (SEMICOLON 1637 . 1638) (PAREN_BLOCK 1618 . 1637) (RETURN 1584 . 1590) (GT 799 . 800) (PUBLIC 768 . 774) (LT 791 . 792)))
+    (semanticdb-table "V1Resources.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.resources" package nil nil [13 52])
+            ("javax.ws.rs.GET" include nil nil [54 77])
+            ("javax.ws.rs.Path" include nil nil [78 102])
+            ("javax.ws.rs.Produces" include nil nil [103 131])
+            ("javax.ws.rs.container.ResourceContext" include nil nil [132 177])
+            ("javax.ws.rs.core.Context" include nil nil [178 210])
+            ("javax.ws.rs.core.MediaType" include nil nil [211 245])
+            ("javax.ws.rs.core.UriInfo" include nil nil [246 278])
+            ("spire.commons.config.entities.SpireConfiguration" include nil nil [280 336])
+            ("spire.commons.config.entities.V1" include nil nil [337 377])
+            ("V1Resources" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("uriInfo" variable
+                       (:typemodifiers ("private")
+                        :type "UriInfo")
+                        (reparse-symbol class_member_declaration) [520 544])
+                    ("getResources" function
+                       (:typemodifiers ("public")
+                        :type "V1")
+                        (reparse-symbol class_member_declaration) [727 869]))                  
+                :type "class")
+                nil [480 1188]))          
+      :file "V1Resources.java"
+      :pointmax 1189
+      :fsize 1188
+      :lastmodtime '(22609 32776 433957 20000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!config!resources!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

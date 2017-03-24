@@ -1,0 +1,257 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "SearchAndMatchServiceImpl.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match.impl" package nil nil [186 211])
+            ("java.io.IOException" include nil nil [213 240])
+            ("java.util.ArrayList" include nil nil [241 268])
+            ("java.util.Collections" include nil nil [269 298])
+            ("java.util.HashMap" include nil nil [299 324])
+            ("java.util.HashSet" include nil nil [325 350])
+            ("java.util.List" include nil nil [351 373])
+            ("java.util.Map" include nil nil [374 395])
+            ("java.util.Set" include nil nil [396 417])
+            ("java.util.stream.Collectors" include nil nil [418 453])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [455 509])
+            ("org.apache.commons.collections.MapUtils" include nil nil [510 557])
+            ("org.apache.commons.lang3.StringUtils" include nil nil [558 602])
+            ("org.apache.lucene.queryparser.surround.query.AndQuery" include nil nil [603 664])
+            ("org.codehaus.jackson.JsonParseException" include nil nil [665 712])
+            ("org.codehaus.jackson.map.JsonMappingException" include nil nil [713 766])
+            ("org.elasticsearch.ElasticsearchException" include nil nil [767 815])
+            ("org.elasticsearch.action.count.CountRequestBuilder" include nil nil [816 874])
+            ("org.elasticsearch.action.count.CountResponse" include nil nil [875 927])
+            ("org.elasticsearch.action.get.GetRequest" include nil nil [928 975])
+            ("org.elasticsearch.action.percolate.MultiPercolateRequestBuilder" include nil nil [976 1047])
+            ("org.elasticsearch.action.percolate.MultiPercolateResponse" include nil nil [1048 1113])
+            ("org.elasticsearch.action.percolate.MultiPercolateResponse.Item" include nil nil [1114 1184])
+            ("org.elasticsearch.action.percolate.PercolateRequestBuilder" include nil nil [1185 1251])
+            ("org.elasticsearch.action.percolate.PercolateResponse" include nil nil [1252 1312])
+            ("org.elasticsearch.action.percolate.PercolateResponse.Match" include nil nil [1313 1379])
+            ("org.elasticsearch.action.search.SearchRequestBuilder" include nil nil [1380 1440])
+            ("org.elasticsearch.action.search.SearchResponse" include nil nil [1441 1495])
+            ("org.elasticsearch.action.search.SearchType" include nil nil [1496 1546])
+            ("org.elasticsearch.client.Requests" include nil nil [1547 1588])
+            ("org.elasticsearch.client.transport.TransportClient" include nil nil [1589 1647])
+            ("org.elasticsearch.common.unit.Fuzziness" include nil nil [1648 1695])
+            ("org.elasticsearch.common.xcontent.XContentBuilder" include nil nil [1696 1753])
+            ("org.elasticsearch.common.xcontent.XContentFactory" include nil nil [1754 1811])
+            ("org.elasticsearch.index.query.AndFilterBuilder" include nil nil [1812 1866])
+            ("org.elasticsearch.index.query.FilterBuilder" include nil nil [1867 1918])
+            ("org.elasticsearch.index.query.QueryBuilders" include nil nil [1919 1970])
+            ("org.elasticsearch.index.query.QueryStringQueryBuilder" include nil nil [1971 2032])
+            ("org.elasticsearch.index.query.TermFilterBuilder" include nil nil [2033 2088])
+            ("org.elasticsearch.search.SearchHit" include nil nil [2089 2131])
+            ("org.elasticsearch.search.SearchHits" include nil nil [2132 2175])
+            ("org.elasticsearch.search.highlight.HighlightBuilder" include nil nil [2176 2235])
+            ("org.elasticsearch.search.highlight.HighlightField" include nil nil [2236 2293])
+            ("org.elasticsearch.search.suggest.completion.CompletionSuggestion" include nil nil [2294 2366])
+            ("org.elasticsearch.search.suggest.completion.CompletionSuggestionBuilder" include nil nil [2367 2446])
+            ("org.elasticsearch.search.suggest.completion.CompletionSuggestionFuzzyBuilder" include nil nil [2447 2531])
+            ("com.google.gson.JsonObject" include nil nil [2533 2567])
+            ("com.sun.jndi.toolkit.dir.SearchFilter" include nil nil [2568 2613])
+            ("edu.emory.mathcs.backport.java.util.Arrays" include nil nil [2615 2665])
+            ("redis.clients.jedis.Jedis" include nil nil [2666 2699])
+            ("spire.commons.cache.service.CacheProvider" include nil nil [2700 2749])
+            ("spire.commons.cache.service.CacheServer" include nil nil [2750 2797])
+            ("spire.commons.cache.service.Connection" include nil nil [2798 2844])
+            ("spire.commons.cache.service.RedisCacheProvider" include nil nil [2845 2899])
+            ("spire.commons.cache.service.RedisCacheServer" include nil nil [2900 2952])
+            ("spire.commons.cache.service.Response" include nil nil [2953 2997])
+            ("spire.commons.config.SpireConfigManager" include nil nil [2998 3045])
+            ("spire.commons.config.exception.PropertyNotFoundException" include nil nil [3046 3110])
+            ("spire.commons.data.service.DataProvider" include nil nil [3111 3158])
+            ("spire.commons.data.service.DataServer" include nil nil [3159 3204])
+            ("spire.commons.data.service.DataServiceException" include nil nil [3205 3260])
+            ("spire.commons.data.service.ElasticSearchDataServer" include nil nil [3261 3319])
+            ("spire.commons.data.service.ElasticSerachDataProvider" include nil nil [3320 3380])
+            ("spire.commons.data.service.ElasticServerConnection" include nil nil [3381 3439])
+            ("spire.commons.data.service.handlers.AbstractDataServiceHandler" include nil nil [3440 3510])
+            ("spire.commons.logger.Key" include nil nil [3511 3543])
+            ("spire.commons.logger.Logger" include nil nil [3544 3579])
+            ("spire.commons.logger.LoggerFactory" include nil nil [3580 3622])
+            ("spire.commons.search.enums.ESFieldTypeEnum" include nil nil [3623 3673])
+            ("spire.commons.search.enums.EntityTypeEnum" include nil nil [3674 3723])
+            ("spire.commons.search.enums.SearchFacetingEnum" include nil nil [3724 3777])
+            ("spire.commons.search.enums.SuggestTypes" include nil nil [3778 3825])
+            ("spire.commons.search.query.SuggestQuery" include nil nil [3826 3873])
+            ("spire.commons.utils.ContextUtil" include nil nil [3874 3913])
+            ("spire.match.RiCalculator" include nil nil [3914 3946])
+            ("spire.match.SearchAndMatchService" include nil nil [3947 3988])
+            ("spire.match.constants.Constants" include nil nil [3989 4028])
+            ("spire.match.entities.AttributeTypeEnum" include nil nil [4029 4075])
+            ("spire.match.entities.CandidateExt" include nil nil [4076 4117])
+            ("spire.match.entities.EnhancedQuery" include nil nil [4118 4160])
+            ("spire.match.entities.MatchQueryInput" include nil nil [4161 4205])
+            ("spire.match.entities.MatchResponse" include nil nil [4206 4248])
+            ("spire.match.entities.MultiPercolateSearch" include nil nil [4249 4298])
+            ("spire.match.entities.Paging" include nil nil [4299 4334])
+            ("spire.match.entities.PassCriteria" include nil nil [4335 4376])
+            ("spire.match.entities.PercolationOutput" include nil nil [4377 4423])
+            ("spire.match.entities.RiCriteria" include nil nil [4424 4463])
+            ("spire.match.entities.SearchConfig" include nil nil [4464 4505])
+            ("spire.match.entities.SearchFacets" include nil nil [4506 4547])
+            ("spire.match.entities.SearchFacets.MatchResultMandatoryField" include nil nil [4548 4615])
+            ("spire.match.entities.SearchFacets.SearchResultAcquraField" include nil nil [4616 4681])
+            ("spire.match.entities.SearchInput" include nil nil [4682 4722])
+            ("spire.match.entities.SearchInput.HighlightFeature" include nil nil [4723 4780])
+            ("spire.match.entities.SearchInput.SearchBy" include nil nil [4781 4830])
+            ("spire.match.entities.SearchResult" include nil nil [4831 4872])
+            ("spire.match.entities.Skill" include nil nil [4873 4907])
+            ("spire.match.entities.SkillConfig" include nil nil [4908 4948])
+            ("spire.match.entities.SkillMatchBean" include nil nil [4949 4992])
+            ("spire.match.entities.exceptions.InvalidParameterException" include nil nil [4993 5058])
+            ("spire.match.entities.exceptions.SystemException" include nil nil [5059 5114])
+            ("spire.match.util.ConfigProperties" include nil nil [5115 5156])
+            ("spire.match.util.ESConnectionManager" include nil nil [5157 5201])
+            ("spire.match.util.FilterBuilderUtil" include nil nil [5202 5244])
+            ("spire.match.util.QueryParser" include nil nil [5245 5281])
+            ("spire.match.util.SearchUtil" include nil nil [5282 5317])
+            ("spire.talent.entity.profileservice.beans.CandidateSkillMapBean" include nil nil [5318 5388])
+            ("SearchAndMatchServiceImpl" type
+               (:typemodifiers ("public")
+                :interfaces ("SearchAndMatchService")
+                :members 
+                  ( ("_logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [5497 5592])
+                    ("esConnectionManager" variable
+                       (:typemodifiers ("private")
+                        :type "ESConnectionManager")
+                        (reparse-symbol class_member_declaration) [5595 5643])
+                    ("CANDIDATE" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5645 5690])
+                    ("REQUISITION" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5692 5741])
+                    ("SOURCESIZE" variable
+                       (:typemodifiers ("private" "final")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [5743 5780])
+                    ("STATUSDISPLAY" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5782 5835])
+                    ("SKILL" variable
+                       (:typemodifiers ("private" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [5837 5874])
+                    ("SearchAndMatchServiceImpl" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("searchConfig" variable (:type "SearchConfig") (reparse-symbol formal_parameters) [6011 6036]))                          )
+                        (reparse-symbol class_member_declaration) [5978 6401])
+                    ("findPassCandidates" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "candidateList") (reparse-symbol formal_parameters) [11000 11013])
+                            ("passCriteria" variable (:type "PassCriteria") (reparse-symbol formal_parameters) [11015 11040]))                          
+                        :type "MatchResponse")
+                        (reparse-symbol class_member_declaration) [10941 20175])
+                    ("calculateRi" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "candidateList") (reparse-symbol formal_parameters) [20241 20254])
+                            ("riCriteria" variable (:type "RiCriteria") (reparse-symbol formal_parameters) [20256 20277]))                          
+                        :type "MatchResponse")
+                        (reparse-symbol class_member_declaration) [20189 21051])
+                    ("enhanceWithSkillCloud" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("configObj" variable (:type "SkillConfig") (reparse-symbol formal_parameters) [21221 21242]))                          
+                        :type "EnhancedQuery")
+                        (reparse-symbol class_member_declaration) [21178 21662])
+                    ("boring" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [21685 21708]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21666 22922])
+                    ("search" function
+                       (:constructor-flag t
+                        :throws ("InvalidParameterException" "SystemException")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [23069 23092]))                          )
+                        (reparse-symbol class_member_declaration) [23062 24204])
+                    ("multiPercolate" function
+                       (:throws ("SystemException")
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("" variable (:type "multiPercolateSearchs") (reparse-symbol formal_parameters) [24274 24295])
+                            ("" variable (:type "projections") (reparse-symbol formal_parameters) [24310 24321]))                          
+                        :type "PercolationOutput")
+                        (reparse-symbol class_member_declaration) [24207 25705])
+                    ("getDocumentByIds" function
+                       (:constructor-flag t
+                        :throws ("SystemException")
+                        :arguments 
+                          ( ("" variable (:type "ids") (reparse-symbol formal_parameters) [25759 25762])
+                            ("entityType" variable (:type "String") (reparse-symbol formal_parameters) [25764 25781])
+                            ("" variable (:type "projections") (reparse-symbol formal_parameters) [25796 25807]))                          )
+                        (reparse-symbol class_member_declaration) [25729 26036])
+                    ("getSearchHits" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "ids") (reparse-symbol formal_parameters) [26090 26093])
+                            ("entityType" variable (:type "String") (reparse-symbol formal_parameters) [26095 26112])
+                            ("" variable (:type "projections") (reparse-symbol formal_parameters) [26127 26138]))                          )
+                        (reparse-symbol class_member_declaration) [26063 26331])
+                    ("entityFetchResponse" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("" variable (:type "ids") (reparse-symbol formal_parameters) [26393 26396])
+                            ("entityType" variable (:type "String") (reparse-symbol formal_parameters) [26398 26415])
+                            ("" variable (:type "projections") (reparse-symbol formal_parameters) [26430 26441]))                          
+                        :type "SearchResponse")
+                        (reparse-symbol class_member_declaration) [26337 27360])
+                    ("suggest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("suggestQuery" variable (:type "SuggestQuery") (reparse-symbol formal_parameters) [27477 27502]))                          )
+                        (reparse-symbol class_member_declaration) [27469 33389])
+                    ("suggest" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("suggestQuery" variable (:type "SuggestQuery") (reparse-symbol formal_parameters) [33506 33531])
+                            ("" variable (:type "suggestFileds") (reparse-symbol formal_parameters) [33546 33559]))                          )
+                        (reparse-symbol class_member_declaration) [33498 39489])
+                    ("suggestV2" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("suggestQuery" variable (:type "SuggestQuery") (reparse-symbol formal_parameters) [39534 39559]))                          )
+                        (reparse-symbol class_member_declaration) [39524 42154])
+                    ("match" function
+                       (:constructor-flag t
+                        :throws ("InvalidParameterException" "SystemException")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [42190 42213]))                          )
+                        (reparse-symbol class_member_declaration) [42184 65138])
+                    ("main" function
+                       (:throws ("SystemException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [65165 65178]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [65141 66573]))                  
+                :type "class")
+                nil [5421 66576]))          
+      :file "SearchAndMatchServiceImpl.java"
+      :pointmax 66577
+      :fsize 67634
+      :lastmodtime '(22615 55878 811729 169000)
+      :unmatched-syntax '((GT 42182 . 42183) (LT 42180 . 42181) (GT 42166 . 42167) (PUBLIC 42157 . 42163) (LT 42164 . 42165) (RSHIFT 39521 . 39523) (LT 39514 . 39515) (COMMA 39509 . 39510) (PUBLIC 39492 . 39498) (LT 39502 . 39503) (GT 33544 . 33545) (IDENTIFIER 33533 . 33537) (LT 33537 . 33538) (RSHIFT 33495 . 33497) (LT 33488 . 33489) (COMMA 33483 . 33484) (PUBLIC 33466 . 33472) (LT 33476 . 33477) (RSHIFT 27466 . 27468) (LT 27459 . 27460) (COMMA 27454 . 27455) (PUBLIC 27437 . 27443) (LT 27447 . 27448) (GT 26428 . 26429) (IDENTIFIER 26417 . 26421) (LT 26421 . 26422) (GT 26391 . 26392) (IDENTIFIER 26380 . 26384) (LT 26384 . 26385) (GT 26125 . 26126) (IDENTIFIER 26114 . 26118) (LT 26118 . 26119) (GT 26088 . 26089) (IDENTIFIER 26077 . 26081) (LT 26081 . 26082) (GT 26061 . 26062) (PUBLIC 26039 . 26045) (LT 26050 . 26051) (GT 25794 . 25795) (IDENTIFIER 25783 . 25787) (LT 25787 . 25788) (GT 25757 . 25758) (IDENTIFIER 25746 . 25750) (LT 25750 . 25751) (GT 25727 . 25728) (LT 25725 . 25726) (GT 25719 . 25720) (PUBLIC 25710 . 25716) (LT 25717 . 25718) (GT 24308 . 24309) (IDENTIFIER 24297 . 24301) (LT 24301 . 24302) (GT 24272 . 24273) (IDENTIFIER 24247 . 24251) (LT 24251 . 24252) (GT 23060 . 23061) (LT 23058 . 23059) (GT 23044 . 23045) (IDENTIFIER 23024 . 23033) (PUBLIC 23035 . 23041) (LT 23042 . 23043) (GT 20239 . 20240) (IDENTIFIER 20222 . 20226) (LT 20226 . 20227) (GT 10998 . 10999) (IDENTIFIER 10981 . 10985) (LT 10985 . 10986))))
+  :file "!home!karthic!spirework!java!search-immediate-fix!ok!match!match!src!main!java!spire!match!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

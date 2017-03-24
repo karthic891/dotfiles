@@ -1,0 +1,23 @@
+;; Object providers/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "providers/"
+  :tables
+  (list
+    (semanticdb-table "SystemExceptionMapper.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.config.providers" package nil nil [1 40])
+            ("javax.ws.rs.core.Response" include nil nil [197 230])
+            ("javax.ws.rs.core.Response.Status" include nil nil [231 271])
+            ("javax.ws.rs.ext.ExceptionMapper" include nil nil [272 311])
+            ("javax.ws.rs.ext.Provider" include nil nil [312 344])
+            ("spire.commons.config.entities.ErrorEntity" include nil nil [346 395])
+            ("spire.commons.config.exceptions.SystemException" include nil nil [396 451]))          
+      :file "SystemExceptionMapper.java"
+      :pointmax 964
+      :fsize 963
+      :lastmodtime '(22200 39961 303698 550000)
+      :unmatched-syntax '((BRACE_BLOCK 647 . 963) (GT 645 . 646) (IDENTIFIER 630 . 645) (PUBLIC 568 . 574) (LT 629 . 630) (IDENTIFIER 178 . 194) (DOT 177 . 178) (IDENTIFIER 163 . 177) (DOT 162 . 163) (IDENTIFIER 154 . 162) (DOT 153 . 154) (IDENTIFIER 147 . 153) (DOT 146 . 147) (IDENTIFIER 139 . 146) (DOT 138 . 139) (IMPORT 119 . 125) (STATIC 126 . 132) (IDENTIFIER 133 . 138) (IDENTIFIER 101 . 117) (DOT 100 . 101) (IDENTIFIER 86 . 100) (DOT 85 . 86) (IDENTIFIER 77 . 85) (DOT 76 . 77) (IDENTIFIER 70 . 76) (DOT 69 . 70) (IDENTIFIER 62 . 69) (DOT 61 . 62) (IMPORT 42 . 48) (STATIC 49 . 55) (IDENTIFIER 56 . 61))))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!config!providers!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

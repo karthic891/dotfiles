@@ -46,7 +46,7 @@
 (global-set-key [f2] 'edit-kbd-macro)
 
 ;;Select text between double quotes
-(global-set-key (kbd "C-x C-a") 'select-between-dquote)
+;; (global-set-key (kbd "C-x C-a") 'select-between-dquote)
 
 ;;Clear buffer, specifically for shell mode
 (global-set-key (kbd "C-l") 'my-erase-buffer)

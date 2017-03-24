@@ -1,4 +1,4 @@
-;; -*- emacs-lisp -*- <16/11/11 20:22:32 /home/karthic/.emacs.d/tramp>
+;; -*- emacs-lisp -*- <17/02/04 12:15:46 /home/karthic/.emacs.d/tramp>
 ;; Tramp connection history.  Don't change this file.
 ;; You can delete it, forcing Tramp to reapply the checks.
 
@@ -18,10 +18,6 @@
   ("perl-cwd-realpath" t)
   ("perl" "\\perl")
   ("tmpdir" "/ssh:root@192.168.2.133:/tmp"))
- (["scp" nil "192.168.2.75" nil nil]
-  nil)
- (["method" "appuser" "192.168.2.75" nil nil]
-  nil)
  (["ssh" "appuser" "192.168.2.75" nil nil]
   ("uname" "Linux 3.10.0-229.el7.x86_64")
   ("test" "test")
@@ -39,4 +35,33 @@
   ("id" "/usr/bin/id")
   ("gid-integer" 1003)
   ("readlink" "\\readlink")
-  ("gid-string" "appuser")))
+  ("gid-string" "appuser"))
+ (["ssh" "appuser" "52.204.221.29" nil nil]
+  ("uname" "Linux 4.4.14-24.50.amzn1.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")
+  ("file-exists" "test -e")
+  ("readlink" "\\readlink")
+  ("stat" nil)
+  ("id" "/usr/bin/id")
+  ("gid-integer" 501)
+  ("gid-string" "appuser")
+  ("gvfs-monitor-dir" nil)
+  ("inotifywait" nil)
+  ("~" "/home/appuser"))
+ (["scp" "root" "52.86.9.184" nil nil]
+  ("uname" "Linux 4.4.11-23.53.amzn1.x86_64")
+  ("test" "test")
+  ("remote-path"
+   ("/bin" "/usr/bin" "/sbin" "/usr/sbin" "/usr/local/bin" "/usr/local/sbin"))
+  ("remote-shell" "/bin/sh")
+  ("locale" "LC_ALL=en_US.utf8")
+  ("perl-file-spec" t)
+  ("perl-cwd-realpath" t)
+  ("perl" "\\perl")))

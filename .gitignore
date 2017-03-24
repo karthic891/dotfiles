@@ -3,6 +3,7 @@
 !.gitignore
 !.gitconfig
 !.emacs
+!.fun-commands
 !.emacs.d/
 !.emacs.d/**
 .emacs.d/*~

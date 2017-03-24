@@ -1,0 +1,32 @@
+;; Object impl/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "impl/"
+  :tables
+  (list
+    (semanticdb-table "SearchServiceHealthCheck.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.commons.health.core.impl" package nil nil [1 40])
+            ("java.util.List" include nil nil [42 64])
+            ("javax.ws.rs.client.Client" include nil nil [66 99])
+            ("javax.ws.rs.client.ClientBuilder" include nil nil [100 140])
+            ("javax.ws.rs.client.Invocation" include nil nil [141 178])
+            ("javax.ws.rs.client.WebTarget" include nil nil [179 215])
+            ("javax.ws.rs.core.Response" include nil nil [216 249])
+            ("spire.commons.health.core.HealthCheck" include nil nil [251 296])
+            ("spire.commons.health.entities.Result" include nil nil [297 341])
+            ("SearchServiceHealthCheck" type
+               (:typemodifiers ("public")
+                :interfaces ("HealthCheck")
+                :members 
+                  ( ("check" function (:constructor-flag t) (reparse-symbol class_member_declaration) [568 920]))                  
+                :type "class")
+                nil [472 922]))          
+      :file "SearchServiceHealthCheck.java"
+      :pointmax 933
+      :fsize 932
+      :lastmodtime '(22609 31598 942140 370000)
+      :unmatched-syntax nil))
+  :file "!home!karthic!spirework!java!spire-config-web!src!main!java!spire!commons!health!core!impl!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

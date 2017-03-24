@@ -1,0 +1,599 @@
+;; Object util/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "util/"
+  :tables
+  (list
+    (semanticdb-table "ESConnectionManager.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match.util" package nil nil [1 26])
+            ("java.net.InetSocketAddress" include nil nil [28 62])
+            ("java.util.ArrayList" include nil nil [63 90])
+            ("java.util.List" include nil nil [91 113])
+            ("java.util.Map" include nil nil [114 135])
+            ("org.elasticsearch.client.transport.TransportClient" include nil nil [137 195])
+            ("org.elasticsearch.common.collect.ImmutableList" include nil nil [196 250])
+            ("org.elasticsearch.common.settings.ImmutableSettings" include nil nil [251 310])
+            ("org.elasticsearch.common.settings.Settings" include nil nil [311 361])
+            ("org.elasticsearch.common.transport.InetSocketTransportAddress" include nil nil [362 431])
+            ("org.elasticsearch.common.transport.TransportAddress" include nil nil [432 491])
+            ("spire.commons.config.SpireConfigManager" include nil nil [493 540])
+            ("spire.commons.config.impl.DynamicConfigurationEvent" include nil nil [541 600])
+            ("spire.commons.config.impl.DynamicConfigurationListener" include nil nil [601 663])
+            ("spire.commons.logger.Key" include nil nil [664 696])
+            ("spire.commons.logger.Logger" include nil nil [697 732])
+            ("spire.commons.logger.LoggerFactory" include nil nil [733 775])
+            ("spire.match.entities.SearchConfig" include nil nil [776 817])
+            ("ESConnectionManager" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_logger" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [856 945])
+                    ("transportClient" variable
+                       (:typemodifiers ("private" "static")
+                        :type "TransportClient")
+                        (reparse-symbol class_member_declaration) [947 994])
+                    ("esIndexName" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [996 1023])
+                    ("ESConnectionChangeListener" type
+                       (:typemodifiers ("private" "static")
+                        :interfaces ("DynamicConfigurationListener")
+                        :members 
+                          ( ("ES_HOST_NAME" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1320 1376])
+                            ("ES_PORT" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1379 1426])
+                            ("ES_CLUSTER_NAME" variable
+                               (:typemodifiers ("private" "static" "final")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [1429 1491])
+                            ("configurationChanged" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("dynamicConfigurationEvent" variable (:type "DynamicConfigurationEvent") (reparse-symbol formal_parameters) [1542 1593]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [1509 3545])
+                            ("getPortFromTransportClient" function
+                               (:typemodifiers ("private" "static")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [3551 4013])
+                            ("updateTransportClient" function
+                               (:typemodifiers ("private" "static")
+                                :arguments 
+                                  ( ("clusterName" variable (:type "String") (reparse-symbol formal_parameters) [4061 4079])
+                                    ("" variable (:type "dataNodesList") (reparse-symbol formal_parameters) [4104 4117])
+                                    ("esPort" variable (:type "String") (reparse-symbol formal_parameters) [4119 4132]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [4019 4417]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [1227 4421])
+                    ("getEsIndexName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [4662 4719])
+                    ("getEsTypeMap" function (:constructor-flag t) (reparse-symbol class_member_declaration) [4784 4823])
+                    ("setTransportClient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("transportClient" variable (:type "TransportClient") (reparse-symbol formal_parameters) [4922 4953]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4891 5001])
+                    ("initTransportClient" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("searchConfig" variable (:type "SearchConfig") (reparse-symbol formal_parameters) [5047 5072]))                          
+                        :type "TransportClient")
+                        (reparse-symbol class_member_declaration) [5004 6297])
+                    ("extractTransportAddresses" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("esHostNames" variable (:type "String") (reparse-symbol formal_parameters) [6365 6383])
+                            ("esPort" variable (:type "String") (reparse-symbol formal_parameters) [6385 6398]))                          )
+                        (reparse-symbol class_member_declaration) [6339 6695])
+                    ("extractTransportAddresses" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "transportAddresses") (reparse-symbol formal_parameters) [6786 6804])
+                            ("port" variable (:type "int") (reparse-symbol formal_parameters) [6806 6814]))                          )
+                        (reparse-symbol class_member_declaration) [6737 7273])
+                    ("getTransportClient" function
+                       (:typemodifiers ("public")
+                        :type "TransportClient")
+                        (reparse-symbol class_member_declaration) [7277 7351])
+                    ("close" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [7355 7443]))                  
+                :type "class")
+                nil [819 7447]))          
+      :file "ESConnectionManager.java"
+      :pointmax 7449
+      :fsize 7448
+      :lastmodtime '(22473 38278 274345 537000)
+      :unmatched-syntax '((GT 6784 . 6785) (IDENTIFIER 6763 . 6767) (LT 6767 . 6768) (GT 6735 . 6736) (PRIVATE 6699 . 6706) (LT 6718 . 6719) (GT 6337 . 6338) (PRIVATE 6301 . 6308) (LT 6320 . 6321) (GT 4782 . 4783) (COMMA 4774 . 4775) (PUBLIC 4757 . 4763) (LT 4767 . 4768) (GT 4102 . 4103) (IDENTIFIER 4081 . 4085) (LT 4085 . 4086) (SEMICOLON 1062 . 1063) (GT 1051 . 1052) (COMMA 1043 . 1044) (PRIVATE 1025 . 1032) (LT 1036 . 1037)))
+    (semanticdb-table "SearchUtil.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("spire.match.util" package nil nil [186 211])
+            ("java.io.IOException" include nil nil [466 493])
+            ("java.io.StringReader" include nil nil [494 522])
+            ("java.sql.Timestamp" include nil nil [523 549])
+            ("java.util.ArrayList" include nil nil [550 577])
+            ("java.util.Collection" include nil nil [578 606])
+            ("java.util.Collections" include nil nil [607 636])
+            ("java.util.HashMap" include nil nil [637 662])
+            ("java.util.HashSet" include nil nil [663 688])
+            ("java.util.Iterator" include nil nil [689 715])
+            ("java.util.List" include nil nil [716 738])
+            ("java.util.Map" include nil nil [739 760])
+            ("java.util.Set" include nil nil [761 782])
+            ("java.util.function.Function" include nil nil [783 818])
+            ("org.apache.commons.collections.CollectionUtils" include nil nil [820 874])
+            ("org.apache.commons.lang3.StringUtils" include nil nil [875 919])
+            ("org.apache.lucene.analysis.Analyzer" include nil nil [920 963])
+            ("org.apache.lucene.analysis.TokenStream" include nil nil [964 1010])
+            ("org.apache.lucene.analysis.tokenattributes.CharTermAttribute" include nil nil [1011 1079])
+            ("org.elasticsearch.action.count.CountRequestBuilder" include nil nil [1080 1138])
+            ("org.elasticsearch.action.search.SearchRequestBuilder" include nil nil [1139 1199])
+            ("org.elasticsearch.action.search.SearchResponse" include nil nil [1200 1254])
+            ("org.elasticsearch.action.search.SearchType" include nil nil [1255 1305])
+            ("org.elasticsearch.client.transport.TransportClient" include nil nil [1306 1364])
+            ("org.elasticsearch.common.text.Text" include nil nil [1365 1407])
+            ("org.elasticsearch.index.query.BoolQueryBuilder" include nil nil [1408 1462])
+            ("org.elasticsearch.index.query.FilterBuilders" include nil nil [1463 1515])
+            ("org.elasticsearch.index.query.FilteredQueryBuilder" include nil nil [1516 1574])
+            ("org.elasticsearch.index.query.IdsFilterBuilder" include nil nil [1575 1629])
+            ("org.elasticsearch.index.query.QueryBuilders" include nil nil [1630 1681])
+            ("org.elasticsearch.search.SearchHit" include nil nil [1682 1724])
+            ("org.elasticsearch.search.SearchHits" include nil nil [1725 1768])
+            ("org.elasticsearch.search.aggregations.Aggregation" include nil nil [1769 1826])
+            ("org.elasticsearch.search.aggregations.AggregationBuilders" include nil nil [1827 1892])
+            ("org.elasticsearch.search.aggregations.Aggregations" include nil nil [1893 1951])
+            ("org.elasticsearch.search.aggregations.InternalAggregations" include nil nil [1952 2018])
+            ("org.elasticsearch.search.aggregations.bucket.filter.FilterAggregationBuilder" include nil nil [2019 2103])
+            ("org.elasticsearch.search.aggregations.bucket.filter.InternalFilter" include nil nil [2104 2178])
+            ("org.elasticsearch.search.aggregations.bucket.range.InternalRange" include nil nil [2179 2251])
+            ("org.elasticsearch.search.aggregations.bucket.range.RangeBuilder" include nil nil [2252 2323])
+            ("org.elasticsearch.search.aggregations.bucket.range.date.DateRangeBuilder" include nil nil [2324 2404])
+            ("org.elasticsearch.search.aggregations.bucket.terms.StringTerms" include nil nil [2405 2475])
+            ("org.elasticsearch.search.aggregations.bucket.terms.Terms.Bucket" include nil nil [2476 2547])
+            ("org.elasticsearch.search.highlight.HighlightField" include nil nil [2548 2605])
+            ("org.elasticsearch.search.sort.SortOrder" include nil nil [2606 2653])
+            ("org.elasticsearch.search.suggest.completion.CompletionSuggestion" include nil nil [2654 2726])
+            ("com.fasterxml.jackson.annotation.JsonInclude.Include" include nil nil [2728 2788])
+            ("com.fasterxml.jackson.databind.DeserializationFeature" include nil nil [2789 2850])
+            ("com.fasterxml.jackson.databind.ObjectMapper" include nil nil [2851 2902])
+            ("spire.commons.config.SpireConfigManager" include nil nil [2904 2951])
+            ("spire.commons.logger.Key" include nil nil [2952 2984])
+            ("spire.commons.logger.Logger" include nil nil [2985 3020])
+            ("spire.commons.logger.LoggerFactory" include nil nil [3021 3063])
+            ("spire.commons.search.enums.EntityTypeEnum" include nil nil [3064 3113])
+            ("spire.commons.search.enums.SearchFacetingEnum" include nil nil [3114 3167])
+            ("spire.crm.profiles.entity.CRM" include nil nil [3168 3205])
+            ("spire.match.ESQueryBuilder" include nil nil [3206 3240])
+            ("spire.match.entities.AttributeTypeEnum" include nil nil [3241 3287])
+            ("spire.match.entities.CandidateExt" include nil nil [3288 3329])
+            ("spire.match.entities.CloudSkill" include nil nil [3330 3369])
+            ("spire.match.entities.FacetTerm" include nil nil [3370 3408])
+            ("spire.match.entities.Field" include nil nil [3409 3443])
+            ("spire.match.entities.FieldCount" include nil nil [3444 3483])
+            ("spire.match.entities.FilterQuery" include nil nil [3484 3524])
+            ("spire.match.entities.MatchQueryInput" include nil nil [3525 3569])
+            ("spire.match.entities.Paging" include nil nil [3570 3605])
+            ("spire.match.entities.RiCriteria" include nil nil [3606 3645])
+            ("spire.match.entities.SearchClient" include nil nil [3646 3687])
+            ("spire.match.entities.SearchConfig" include nil nil [3688 3729])
+            ("spire.match.entities.SearchFacets" include nil nil [3730 3771])
+            ("spire.match.entities.SearchFacets.MatchResultMandatoryField" include nil nil [3772 3839])
+            ("spire.match.entities.SearchFacets.SearchResultAcquraField" include nil nil [3840 3905])
+            ("spire.match.entities.SearchFacets.SearchResultMandatoryField" include nil nil [3906 3974])
+            ("spire.match.entities.SearchFacets.SupportedAggregations" include nil nil [3975 4038])
+            ("spire.match.entities.SearchInput" include nil nil [4039 4079])
+            ("spire.match.entities.SearchInput.HighlightFeature" include nil nil [4080 4137])
+            ("spire.match.entities.SearchInput.SearchBy" include nil nil [4138 4187])
+            ("spire.match.entities.SearchResult" include nil nil [4188 4229])
+            ("spire.match.entities.SearchResultOnFields" include nil nil [4230 4279])
+            ("spire.match.entities.Skill" include nil nil [4280 4314])
+            ("spire.match.entities.SkillMatchBean" include nil nil [4315 4358])
+            ("spire.match.entities.exceptions.InvalidParameterException" include nil nil [4359 4424])
+            ("spire.match.entities.exceptions.SystemException" include nil nil [4425 4480])
+            ("spire.match.impl.LuceneQueryBuilder" include nil nil [4481 4524])
+            ("spire.talent.common.beans.CollectionEntity" include nil nil [4525 4575])
+            ("spire.talent.entity.profileservice.beans.CandidateEducationMapBean" include nil nil [4576 4650])
+            ("spire.talent.entity.profileservice.beans.CandidateEmployerMapBean" include nil nil [4651 4724])
+            ("spire.talent.entity.profileservice.beans.CandidateProjectMapBean" include nil nil [4725 4797])
+            ("spire.talent.entity.profileservice.beans.CandidateSkillMapBean" include nil nil [4798 4868])
+            ("spire.talent.entity.profileservice.beans.RequisitionCandidateMappingBean" include nil nil [4869 4949])
+            ("SearchUtil" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("_logger" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [5009 5083])
+                    ("setSkillContextWeight" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("riCriteria" variable (:type "RiCriteria") (reparse-symbol formal_parameters) [5127 5148]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [5086 8867])
+                    ("setSkillContextWeightV3" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("riCriteria" variable (:type "RiCriteria") (reparse-symbol formal_parameters) [8914 8935]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [8871 15844])
+                    ("normaliseAttributeWeightMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "AttributeTypeEnum") (reparse-symbol formal_parameters) [15927 15944])
+                            ("" variable (:type "attributeWeightMap") (reparse-symbol formal_parameters) [15953 15971]))                          )
+                        (reparse-symbol class_member_declaration) [15891 16501])
+                    ("projectWeightToN" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "weightList") (reparse-symbol formal_parameters) [16559 16569])
+                            ("totalWeight" variable (:type "Float") (reparse-symbol formal_parameters) [16571 16588]))                          )
+                        (reparse-symbol class_member_declaration) [16530 17248])
+                    ("findWeightSum" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "weightList") (reparse-symbol formal_parameters) [17297 17307]))                          
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [17251 17457])
+                    ("getBaseSkillTypeMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "skillList") (reparse-symbol formal_parameters) [17547 17556]))                          )
+                        (reparse-symbol class_member_declaration) [17515 18905])
+                    ("getCandidateSkillStrengthMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("candidateSummary" variable (:type "CandidateExt") (reparse-symbol formal_parameters) [18986 19015])
+                            ("applyStemming" variable (:type "boolean") (reparse-symbol formal_parameters) [19017 19038]))                          )
+                        (reparse-symbol class_member_declaration) [18957 19863])
+                    ("createESRequestBuilder" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("esConnectionManager" variable (:type "ESConnectionManager") (reparse-symbol formal_parameters) [20064 20103])
+                            ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [20108 20131]))                          
+                        :type "SearchRequestBuilder")
+                        (reparse-symbol class_member_declaration) [20006 21424])
+                    ("createESRequestBuilder" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("esConnectionManager" variable (:type "ESConnectionManager") (reparse-symbol formal_parameters) [21628 21667])
+                            ("entityType" variable (:type "EntityTypeEnum") (reparse-symbol formal_parameters) [21669 21694]))                          
+                        :type "SearchRequestBuilder")
+                        (reparse-symbol class_member_declaration) [21570 22486])
+                    ("createECRequestBuilder" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("esConnectionManager" variable (:type "ESConnectionManager") (reparse-symbol formal_parameters) [22689 22728])
+                            ("entityType" variable (:type "EntityTypeEnum") (reparse-symbol formal_parameters) [22730 22755]))                          
+                        :type "CountRequestBuilder")
+                        (reparse-symbol class_member_declaration) [22632 23537])
+                    ("createESRequestBuilderMatch" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("esConnectionManager" variable (:type "ESConnectionManager") (reparse-symbol formal_parameters) [23608 23647])
+                            ("matchQueryInput" variable (:type "MatchQueryInput") (reparse-symbol formal_parameters) [23652 23683]))                          
+                        :type "SearchRequestBuilder")
+                        (reparse-symbol class_member_declaration) [23545 26335])
+                    ("setMandatoryFieldsNeededInResult" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [26650 26685])
+                            ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [26687 26710]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [26598 27513])
+                    ("setMandatoryFieldsNeededInMatchResult" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [27793 27828]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [27736 28207])
+                    ("addAggregationsToRequest" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [28361 28396]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [28316 34673])
+                    ("addAggregationsToRequest" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [34852 34887])
+                            ("" variable (:type "customFacets") (reparse-symbol formal_parameters) [34905 34917]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [34807 39868])
+                    ("setSorting" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [39998 40021])
+                            ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [40023 40058]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [39968 40354])
+                    ("setPagination" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [40486 40509])
+                            ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [40511 40546]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40453 40701])
+                    ("validateSearchInput" function
+                       (:throws ("InvalidParameterException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [40865 40888]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [40826 41652])
+                    ("validateSearchConfig" function
+                       (:throws ("InvalidParameterException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchConfig" variable (:type "SearchConfig") (reparse-symbol formal_parameters) [41855 41880]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [41815 42417])
+                    ("setDefaultValues" function
+                       (:throws ("InvalidParameterException")
+                        :typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [42610 42633]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [42574 43017])
+                    ("setHighLightFields" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [43214 43237])
+                            ("numberOfFragments" variable (:type "int") (reparse-symbol formal_parameters) [43239 43260])
+                            ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [43265 43300]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [43176 43757])
+                    ("parseResponseAndGetResult" function
+                       (:constructor-flag t
+                        :throws ("SystemException")
+                        :arguments 
+                          ( ("esSearchResponse" variable (:type "SearchResponse") (reparse-symbol formal_parameters) [44125 44156])
+                            ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [44161 44184]))                          )
+                        (reparse-symbol class_member_declaration) [44099 45426])
+                    ("parseAggregations" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("esAggregations" variable (:type "Aggregations") (reparse-symbol formal_parameters) [45631 45658]))                          )
+                        (reparse-symbol class_member_declaration) [45613 49834])
+                    ("parseAggregations" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("esAggregations" variable (:type "Aggregations") (reparse-symbol formal_parameters) [50041 50068])
+                            ("" variable (:type "customFacets") (reparse-symbol formal_parameters) [50086 50098]))                          )
+                        (reparse-symbol class_member_declaration) [50023 54132])
+                    ("parseResponseForCandidates" function
+                       (:constructor-flag t
+                        :throws ("SystemException")
+                        :arguments 
+                          ( ("" variable (:type "skillsFromTagCloud") (reparse-symbol formal_parameters) [54508 54526])
+                            ("" variable (:type "fieldsInInputQuery") (reparse-symbol formal_parameters) [54544 54562])
+                            ("results" variable (:type "SearchHits") (reparse-symbol formal_parameters) [54564 54582])
+                            ("nonMatchNeeded" variable (:type "boolean") (reparse-symbol formal_parameters) [54584 54606])
+                            ("client" variable (:type "SearchClient") (reparse-symbol formal_parameters) [54608 54627]))                          )
+                        (reparse-symbol class_member_declaration) [54469 58587])
+                    ("setCurrentEmployerAndDesignation" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("candidate" variable (:type "CandidateExt") (reparse-symbol formal_parameters) [58808 58830])
+                            ("" variable (:type "employersCollection") (reparse-symbol formal_parameters) [58878 58897]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [58755 59550])
+                    ("setRequisitionIds" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("candidate" variable (:type "CandidateExt") (reparse-symbol formal_parameters) [59731 59753])
+                            ("" variable (:type "requisitionCollection") (reparse-symbol formal_parameters) [59808 59829]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [59693 60650])
+                    ("highlightManually" function
+                       (:typemodifiers ("private" "static")
+                        :arguments 
+                          ( ("" variable (:type "fieldsInInputQuery") (reparse-symbol formal_parameters) [60941 60959])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [60968 60974])
+                            ("" variable (:type "highlightedFields") (reparse-symbol formal_parameters) [60996 61013])
+                            ("candidate" variable (:type "CandidateExt") (reparse-symbol formal_parameters) [61015 61037]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [60890 62061])
+                    ("getNonHighlightedFields" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("candidate" variable (:type "CandidateExt") (reparse-symbol formal_parameters) [62437 62459])
+                            ("" variable (:type "String") (reparse-symbol formal_parameters) [62468 62474])
+                            ("" variable (:type "highlightedFields") (reparse-symbol formal_parameters) [62496 62513]))                          )
+                        (reparse-symbol class_member_declaration) [62413 67432])
+                    ("getUnmatchedRole" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValues") (reparse-symbol formal_parameters) [67679 67696])
+                            ("" variable (:type "projectsCollection") (reparse-symbol formal_parameters) [67743 67761]))                          )
+                        (reparse-symbol class_member_declaration) [67643 68294])
+                    ("getUnmatchedEngagementScore" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValuesAsObjects") (reparse-symbol formal_parameters) [68598 68624])
+                            ("crmFromCandidate" variable (:type "CRM") (reparse-symbol formal_parameters) [68629 68649]))                          )
+                        (reparse-symbol class_member_declaration) [68551 68988])
+                    ("getUnmatchedEngagementStageName" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValuesAsObjects") (reparse-symbol formal_parameters) [69311 69337])
+                            ("crmFromCandidate" variable (:type "CRM") (reparse-symbol formal_parameters) [69342 69362]))                          )
+                        (reparse-symbol class_member_declaration) [69260 69659])
+                    ("getUnmatchedEmployers" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValues") (reparse-symbol formal_parameters) [69943 69960])
+                            ("" variable (:type "employersCollection") (reparse-symbol formal_parameters) [70008 70027]))                          )
+                        (reparse-symbol class_member_declaration) [69902 70620])
+                    ("getUnmatchedEducationInstituteName" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValues") (reparse-symbol formal_parameters) [70950 70967])
+                            ("" variable (:type "educationsCollection") (reparse-symbol formal_parameters) [71016 71036]))                          )
+                        (reparse-symbol class_member_declaration) [70896 71550])
+                    ("getUnmatchedSkills" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "highlightedValues") (reparse-symbol formal_parameters) [71834 71851])
+                            ("" variable (:type "skillsCollection") (reparse-symbol formal_parameters) [71896 71912]))                          )
+                        (reparse-symbol class_member_declaration) [71796 72808])
+                    ("getHighlightedTermsFromElasticSearch" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [73134 73140])
+                            ("" variable (:type "esHighlightedFields") (reparse-symbol formal_parameters) [73158 73177]))                          )
+                        (reparse-symbol class_member_declaration) [73089 74384])
+                    ("parseHighlightedFragments" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("highlightedText" variable
+                               (:dereference 1
+                                :type "Text")
+                                (reparse-symbol formal_parameters) [74599 74621]))                          )
+                        (reparse-symbol class_member_declaration) [74573 74798])
+                    ("isNullOrEmpty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("value" variable (:type "String") (reparse-symbol formal_parameters) [74958 74970]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [74922 75078])
+                    ("isNullOrEmpty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "value") (reparse-symbol formal_parameters) [75259 75264]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [75209 75330])
+                    ("isNullOrEmpty" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "value") (reparse-symbol formal_parameters) [75499 75504]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [75454 75570])
+                    ("getMatchedCount" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [75624 75630])
+                            ("" variable (:type "baseSkillMap") (reparse-symbol formal_parameters) [75639 75651])
+                            ("" variable (:type "matchedSkills") (reparse-symbol formal_parameters) [75665 75678])
+                            ("applyStemming" variable (:type "boolean") (reparse-symbol formal_parameters) [75680 75701]))                          
+                        :type "SkillMatchBean")
+                        (reparse-symbol class_member_declaration) [75575 76977])
+                    ("formatHighlightMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "String") (reparse-symbol formal_parameters) [77042 77048])
+                            ("" variable (:type "highLightMap") (reparse-symbol formal_parameters) [77070 77082])
+                            ("applyStemming" variable (:type "boolean") (reparse-symbol formal_parameters) [77084 77105]))                          )
+                        (reparse-symbol class_member_declaration) [77019 78254])
+                    ("getAttributeKeyForSearchFacet" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("facet" variable (:type "String") (reparse-symbol formal_parameters) [78308 78320]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [78257 78804])
+                    ("addDoubleQuotes" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("query" variable (:type "String") (reparse-symbol formal_parameters) [78844 78856])
+                            ("type" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [78858 78871]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [78807 80890])
+                    ("formatSearchString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("srchStr" variable (:type "String") (reparse-symbol formal_parameters) [81293 81307]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [81253 81358])
+                    ("formatSearchString" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("srchStr" variable (:type "String") (reparse-symbol formal_parameters) [81402 81416])
+                            ("applystemming" variable (:type "boolean") (reparse-symbol formal_parameters) [81418 81439]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [81362 81674])
+                    ("getAverageWeight" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "items") (reparse-symbol formal_parameters) [81726 81731]))                          
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [81677 81850])
+                    ("getCloudScoreWeight" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("cloudMatched" variable (:type "int") (reparse-symbol formal_parameters) [81894 81910])
+                            ("cloudCutOff" variable (:type "int") (reparse-symbol formal_parameters) [81912 81927])
+                            ("growthFactor" variable (:type "Float") (reparse-symbol formal_parameters) [81929 81947]))                          
+                        :type "Float")
+                        (reparse-symbol class_member_declaration) [81854 82141])
+                    ("roundNDecimal" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("number" variable (:type "float") (reparse-symbol formal_parameters) [82179 82191])
+                            ("scale" variable (:type "int") (reparse-symbol formal_parameters) [82193 82202]))                          
+                        :type "float")
+                        (reparse-symbol class_member_declaration) [82145 82392])
+                    ("getCandidateHighlightMap" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("" variable (:type "candidates") (reparse-symbol formal_parameters) [82492 82502])
+                            ("applyStemming" variable (:type "boolean") (reparse-symbol formal_parameters) [82504 82525]))                          )
+                        (reparse-symbol class_member_declaration) [82448 83896])
+                    ("addQuery" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("requestBuilder" variable (:type "SearchRequestBuilder") (reparse-symbol formal_parameters) [83928 83963])
+                            ("searchInput" variable (:type "SearchInput") (reparse-symbol formal_parameters) [83965 83988]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [83900 84280])
+                    ("replaceNonAlphaNumCharsBetweenAlphaNumChars" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("testStr" variable (:type "String") (reparse-symbol formal_parameters) [84349 84363]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [84284 84952])
+                    ("findFirstAlphaNumericIndex" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("str" variable (:type "String") (reparse-symbol formal_parameters) [85001 85011]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [84956 85211])
+                    ("processString" function (:constructor-flag t) (reparse-symbol class_member_declaration) [85281 85397])
+                    ("stripSpecialChars" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("source" variable (:type "String") (reparse-symbol formal_parameters) [85441 85454]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [85401 86070])
+                    ("stem" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [86100 86111]))                          
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [86074 86870]))                  
+                :type "class")
+                nil [4981 86872]))          
+      :file "SearchUtil.java"
+      :pointmax 86873
+      :fsize 86872
+      :lastmodtime '(22516 53804 204209 224000)
+      :unmatched-syntax '((GT 85279 . 85280) (COMMA 85271 . 85272) (PUBLIC 85215 . 85221) (LT 85237 . 85238) (GT 82490 . 82491) (IDENTIFIER 82473 . 82477) (LT 82477 . 82478) (URSHIFT 82444 . 82447) (LT 82437 . 82438) (COMMA 82432 . 82433) (LT 82425 . 82426) (COMMA 82420 . 82421) (PUBLIC 82396 . 82402) (LT 82413 . 82414) (GT 81724 . 81725) (IDENTIFIER 81714 . 81718) (LT 81718 . 81719) (RSHIFT 77067 . 77069) (IDENTIFIER 77050 . 77060) (LT 77060 . 77061) (IDENTIFIER 77038 . 77041) (LT 77041 . 77042) (RSHIFT 77016 . 77018) (LT 77009 . 77010) (COMMA 77004 . 77005) (PUBLIC 76980 . 76986) (LT 76997 . 76998) (GT 75663 . 75664) (IDENTIFIER 75653 . 75656) (LT 75656 . 75657) (IDENTIFIER 75632 . 75637) (GT 75637 . 75638) (IDENTIFIER 75620 . 75623) (LT 75623 . 75624) (GT 75497 . 75498) (QUESTION 75496 . 75497) (COMMA 75495 . 75496) (QUESTION 75494 . 75495) (IDENTIFIER 75490 . 75493) (LT 75493 . 75494) (GT 75257 . 75258) (QUESTION 75256 . 75257) (IDENTIFIER 75245 . 75255) (LT 75255 . 75256) (GT 74571 . 74572) (PRIVATE 74546 . 74553) (LT 74564 . 74565) (IDENTIFIER 73142 . 73156) (GT 73156 . 73157) (IDENTIFIER 73130 . 73133) (LT 73133 . 73134) (RSHIFT 73086 . 73088) (LT 73079 . 73080) (COMMA 73067 . 73068) (PRIVATE 73042 . 73049) (LT 73060 . 73061) (GT 71894 . 71895) (IDENTIFIER 71856 . 71872) (LT 71872 . 71873) (GT 71832 . 71833) (IDENTIFIER 71815 . 71825) (LT 71825 . 71826) (GT 71794 . 71795) (PRIVATE 71769 . 71776) (LT 71787 . 71788) (GT 71014 . 71015) (IDENTIFIER 70972 . 70988) (LT 70988 . 70989) (GT 70948 . 70949) (IDENTIFIER 70931 . 70941) (LT 70941 . 70942) (GT 70894 . 70895) (PRIVATE 70869 . 70876) (LT 70887 . 70888) (GT 70006 . 70007) (IDENTIFIER 69965 . 69981) (LT 69981 . 69982) (GT 69941 . 69942) (IDENTIFIER 69924 . 69934) (LT 69934 . 69935) (GT 69900 . 69901) (PRIVATE 69875 . 69882) (LT 69893 . 69894) (GT 69309 . 69310) (IDENTIFIER 69292 . 69302) (LT 69302 . 69303) (GT 69258 . 69259) (PRIVATE 69233 . 69240) (LT 69251 . 69252) (GT 68596 . 68597) (IDENTIFIER 68579 . 68589) (LT 68589 . 68590) (GT 68549 . 68550) (PRIVATE 68524 . 68531) (LT 68542 . 68543) (GT 67741 . 67742) (IDENTIFIER 67701 . 67717) (LT 67717 . 67718) (GT 67677 . 67678) (IDENTIFIER 67660 . 67670) (LT 67670 . 67671) (GT 67641 . 67642) (PRIVATE 67616 . 67623) (LT 67634 . 67635) (RSHIFT 62493 . 62495) (IDENTIFIER 62476 . 62486) (LT 62486 . 62487) (IDENTIFIER 62464 . 62467) (LT 62467 . 62468) (RSHIFT 62410 . 62412) (LT 62403 . 62404) (COMMA 62391 . 62392) (PRIVATE 62366 . 62373) (LT 62384 . 62385) (RSHIFT 60993 . 60995) (IDENTIFIER 60976 . 60986) (LT 60986 . 60987) (IDENTIFIER 60964 . 60967) (LT 60967 . 60968) (GT 60939 . 60940) (IDENTIFIER 60928 . 60932) (LT 60932 . 60933) (GT 59806 . 59807) (IDENTIFIER 59758 . 59774) (LT 59774 . 59775) (GT 58876 . 58877) (IDENTIFIER 58835 . 58851) (LT 58851 . 58852) (GT 54542 . 54543) (IDENTIFIER 54531 . 54535) (LT 54535 . 54536) (GT 54506 . 54507) (IDENTIFIER 54496 . 54499) (LT 54499 . 54500) (GT 54467 . 54468) (PRIVATE 54435 . 54442) (LT 54454 . 54455) (GT 50084 . 50085) (IDENTIFIER 50070 . 50074) (LT 50074 . 50075) (GT 50021 . 50022) (PRIVATE 49996 . 50003) (LT 50015 . 50016) (GT 45611 . 45612) (PRIVATE 45586 . 45593) (LT 45605 . 45606) (GT 44097 . 44098) (LT 44095 . 44096) (GT 44081 . 44082) (PUBLIC 44065 . 44071) (LT 44079 . 44080) (GT 34903 . 34904) (IDENTIFIER 34889 . 34893) (LT 34893 . 34894) (GT 18955 . 18956) (COMMA 18932 . 18933) (PUBLIC 18908 . 18914) (LT 18925 . 18926) (GT 17545 . 17546) (IDENTIFIER 17535 . 17539) (LT 17539 . 17540) (RSHIFT 17512 . 17514) (COMMA 17505 . 17506) (LT 17498 . 17499) (COMMA 17493 . 17494) (PUBLIC 17460 . 17466) (LT 17477 . 17478) (GT 17295 . 17296) (IDENTIFIER 17285 . 17289) (LT 17289 . 17290) (GT 16557 . 16558) (IDENTIFIER 16547 . 16551) (LT 16551 . 16552) (GT 16528 . 16529) (PUBLIC 16504 . 16510) (LT 16522 . 16523) (IDENTIFIER 15946 . 15951) (GT 15951 . 15952) (IDENTIFIER 15923 . 15926) (LT 15926 . 15927) (GT 15889 . 15890) (COMMA 15882 . 15883) (PUBLIC 15847 . 15853) (LT 15864 . 15865) (IDENTIFIER 455 . 463) (DOT 454 . 455) (IDENTIFIER 445 . 454) (DOT 444 . 445) (IDENTIFIER 435 . 444) (DOT 434 . 435) (IDENTIFIER 429 . 434) (DOT 428 . 429) (IMPORT 409 . 415) (STATIC 416 . 422) (IDENTIFIER 423 . 428) (IDENTIFIER 387 . 407) (DOT 386 . 387) (IDENTIFIER 377 . 386) (DOT 376 . 377) (IDENTIFIER 367 . 376) (DOT 366 . 367) (IDENTIFIER 361 . 366) (DOT 360 . 361) (IMPORT 341 . 347) (STATIC 348 . 354) (IDENTIFIER 355 . 360) (IDENTIFIER 330 . 339) (DOT 329 . 330) (IDENTIFIER 320 . 329) (DOT 319 . 320) (IDENTIFIER 310 . 319) (DOT 309 . 310) (IDENTIFIER 304 . 309) (DOT 303 . 304) (IMPORT 284 . 290) (STATIC 291 . 297) (IDENTIFIER 298 . 303) (IDENTIFIER 259 . 282) (DOT 258 . 259) (IDENTIFIER 249 . 258) (DOT 248 . 249) (IDENTIFIER 239 . 248) (DOT 238 . 239) (IDENTIFIER 233 . 238) (DOT 232 . 233) (IMPORT 213 . 219) (STATIC 220 . 226) (IDENTIFIER 227 . 232))))
+  :file "!home!karthic!spirework!java!match!match!src!main!java!spire!match!util!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
