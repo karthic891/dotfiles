@@ -51,10 +51,9 @@
 ;;window settings
 (split-window-horizontally)
 ;;move to new window
-(other-window 1)
+;; (other-window 1)
 (set-frame-size (selected-frame) 80 38)
-;;load shell prompt in the other window
-;;(cygwin-shell)
+;;load shell prompt in the other window)
 (shell)
 ;;move back to original window
 (other-window 1)

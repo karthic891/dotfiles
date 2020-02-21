@@ -40,21 +40,5 @@
 ;;load dictionaries by default
 (setq-default ac-sources (add-to-list 'ac-sources 'ac-source-dictionary))
 (global-auto-complete-mode t)
-(setq ac-auto-start 1) ;;start auto-completion after 2 characters of a word
-(setq ac-ignore-case) ;;for case sensitivity - set nil for reverse case
-
-;;activate pdf-tools
-;; (add-to-list 'load-path "~/.emacs.d/elpa/pdf-tools-20160525.920")
-;; (require 'pdf-occur)
-;; (require 'pdf-tools)
-;; (pdf-tools-install)
-
-;; load multi-web-mode for indentaion for script and other tags in html documents
-(add-to-list 'load-path "~/.emacs.d/plugins/multi-web-mode")
-(require 'multi-web-mode)
-(setq mweb-default-major-mode 'html-mode)
-(setq mweb-tags '((php-mode "<\\?php\\|<\\? \\|<\\?=" "\\?>")
-                  (js-mode "<script +\\(type=\"text/javascript\"\\|language=\"javascript\"\\)[^>]*>" "</script>")
-                  (css-mode "<style +type=\"text/css\"[^>]*>" "</style>")))
-(setq mweb-filename-extensions '("php" "htm" "html" "ctp" "phtml" "php4" "php5"))
-(multi-web-global-mode 1)
+(setq ac-auto-start t) ;;start auto-completion after 2 characters of a word
+(setq ac-ignore-case t) ;;for case sensitivity - set nil for reverse case
